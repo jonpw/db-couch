@@ -1,0 +1,1005 @@
+2020/02/17 11:36:56 cbauth: key: fts/remoteClients registered for tls config updates
+2020/02/17 11:36:56 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+_time=2020-02-17T11:36:56.174+00:00 _level=INFO _msg= Initialization of cbauth succeeded  
+_time=2020-02-17T11:36:56.186+00:00 _level=INFO _msg=New store created with url http://127.0.0.1:8091 
+_time=2020-02-17T11:36:56.187+00:00 _level=INFO _msg=pollEOF: About to start stdin polling 
+2020/02/17 11:36:56 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+_time=2020-02-17T11:36:56.221+00:00 _level=INFO _msg=Unable to initialize dictionary cache monitor Cound not access dictionary cache change counter due to <nil> 
+_time=2020-02-17T11:36:56.240+00:00 _level=INFO _msg=New settings received: {"timeout":0,"n1ql-feat-ctrl":12,"max-parallelism":1,"query.settings.curl_whitelist":{"all_access":false,"allowed_urls":[],"disallowed_urls":[]},"query.settings.tmp_space_dir":"/opt/couchbase/var/lib/couchbase/tmp","completed-limit":4000,"prepared-limit":16384,"pipeline-batch":16,"pipeline-cap":512,"scan-cap":512,"loglevel":"info","completed-threshold":1000,"query.settings.tmp_space_size":5120} 
+_time=2020-02-17T11:36:56.240+00:00 _level=INFO _msg=Settings notifier from metakv 
+_time=2020-02-17T11:36:56.240+00:00 _level=INFO _msg=New Value for curl whitelist <ud>map[all_access:false allowed_urls:[] disallowed_urls:[]]</ud> 
+2020-02-17T11:36:56.250+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:36:56.253+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:36:56.256+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:36:56.257+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:36:56.258+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:36:56.258+00:00 [Info] GSIC - Setting config map[query_tmpspace_limit:5120 query_tmpspace_dir:/opt/couchbase/var/lib/couchbase/tmp]
+_time=2020-02-17T11:36:56.258+00:00 _level=INFO _msg= GSI indexer settings have been updated map[query_tmpspace_limit:5120 query_tmpspace_dir:/opt/couchbase/var/lib/couchbase/tmp] 
+2020/02/17 11:36:56 audit: created new audit service
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg= n1fty indexer settings have been updated map[query_tmpspace_limit:5120 query_tmpspace_dir:/opt/couchbase/var/lib/couchbase/tmp] 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for pipeline-cap. New value is 512 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for completed-limit. New value is 4000 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for pipeline-batch. New value is 16 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for prepared-limit. New value is 16384 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for scan-cap. New value is 512 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for completed-threshold. New value is 1000 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for loglevel. New value is info 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for timeout. New value is 0 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for n1ql-feat-ctrl. New value is 12 
+_time=2020-02-17T11:36:56.259+00:00 _level=INFO _msg=Query Configuration changed for max-parallelism. New value is 1 
+_time=2020-02-17T11:36:56.261+00:00 _level=INFO _msg=cbq-engine started loglevel=INFO pipeline-cap=512 pipeline-batch=16 max-concurrency=4 request-cap=256 n1ql_feat_cntrl=12 timeout=0s datastore=http://127.0.0.1:8091 servicers=16 plus-servicers=64 scan-cap=512 max-index-api=4 version=2.0.0-N1QL request-size-cap=67108864 
+_time=2020-02-17T11:36:56.262+00:00 _level=INFO _msg=Starting audit worker 2 
+_time=2020-02-17T11:36:56.262+00:00 _level=INFO _msg=Starting audit worker 3 
+_time=2020-02-17T11:36:56.262+00:00 _level=INFO _msg=Starting audit worker 1 
+_time=2020-02-17T11:36:56.262+00:00 _level=INFO _msg=Starting audit worker 4 
+_time=2020-02-17T11:36:56.262+00:00 _level=INFO _msg=Starting audit settings worker 1. 
+_time=2020-02-17T11:36:56.262+00:00 _level=INFO _msg= Certificates have been refreshed by ns server  
+_time=2020-02-17T11:36:56.263+00:00 _level=INFO _msg=HttpEndpoint: Listen Address=[::]:8093 
+_time=2020-02-17T11:36:56.272+00:00 _level=INFO _msg=Unable to initialize functions cache monitor Could not access functions change counter because <nil> 
+2020/02/17 11:36:56 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+_time=2020-02-17T11:36:56.285+00:00 _level=INFO _msg=HttpEndpoint: ListenTLS Address=[::]:18093 
+_time=2020-02-17T11:36:56.285+00:00 _level=ERROR _msg=Updating node-to-node encryption level: {EncryptData:false DisableNonSSLPorts:false} 
+2020-02-17T11:36:56.411+00:00 [INFO] 32:b8:45:6b:aa:8d:56:a9 6094390440746147017 : Initialized isolate
+2020-02-17T11:36:56.414+00:00 [INFO] Reponse : Message:"Evaluator initialized successfully" 
+2020-02-17T11:36:56.457+00:00 [INFO] bc:14:ed:cb:5a:78:d0:a8 11374794027486807570 : Initialized isolate
+2020-02-17T11:36:56.459+00:00 [INFO] Reponse : Message:"Evaluator initialized successfully" 
+_time=2020-02-17T11:36:57.262+00:00 _level=INFO _msg=Starting audit update stream 
+2020/02/17 11:38:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020/02/17 11:38:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+_time=2020-02-17T11:38:21.843+00:00 _level=INFO _msg= Certificates have been refreshed by ns server  
+_time=2020-02-17T11:38:21.843+00:00 _level=INFO _msg=HttpEndpoint: close listener  Address=[::]:18093 err=<nil> 
+_time=2020-02-17T11:38:21.849+00:00 _level=INFO _msg=HttpEndpoint: ListenTLS Address=[::]:18093 
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2, key: nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2, deletion: false
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2, key: nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2, deletion: false
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/e2a2c7da05001b61d5128ac80c037dc5, key: nodeDefs-known/e2a2c7da05001b61d5128ac80c037dc5, deletion: false
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/e2a2c7da05001b61d5128ac80c037dc5, key: nodeDefs-wanted/e2a2c7da05001b61d5128ac80c037dc5, deletion: false
+_time=2020-02-17T11:44:11.808+00:00 _level=INFO _msg=Created New Bucket cms 
+2020-02-17T11:44:11.816+00:00 [Info] creating GsiClient for 127.0.0.1:8091
+2020-02-17T11:44:11.816+00:00 [Info] Recieve security change notification. encryption=false
+2020-02-17T11:44:11.823+00:00 [Info] Certificate refreshed successfully
+2020-02-17T11:44:11.828+00:00 [Info] New settings received: 
+{"indexer.settings.compaction.days_of_week":"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday","indexer.settings.compaction.interval":"00:00,00:00","indexer.settings.compaction.compaction_mode":"circular","indexer.settings.log_level":"info","indexer.settings.persisted_snapshot.interval":5000,"indexer.settings.compaction.min_frag":30,"indexer.settings.inmemory_snapshot.interval":200,"indexer.settings.max_cpu_percent":0,"indexer.settings.storage_mode":"plasma","indexer.settings.recovery.max_rollbacks":2,"indexer.settings.memory_quota":268435456,"indexer.settings.compaction.abort_exceed_interval":false}
+2020-02-17T11:44:11.845+00:00 [Info] security context initialized
+2020-02-17T11:44:11.845+00:00 [Info] security port mapping updated : map[9105:9105 9999:9999 11210:11207 9102:19102 9103:9103 9104:9104 8093:18093 9100:9100 9101:9101]
+2020-02-17T11:44:11.900+00:00 [Info] MetadataProvider.SetClusterStatus(): healthy nodes 3 failed node 0 unhealthy node 0 add node 0
+2020-02-17T11:44:11.900+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:11.900+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:11.900+00:00 [Info] MetadataProvider.WatchMetadata(): indexer 10.0.2.11:9100
+2020-02-17T11:44:11.949+00:00 [Info] WatchMetadata(): successfully reach indexer at 10.0.2.11:9100.
+2020-02-17T11:44:11.949+00:00 [Info] MetadataProvider.WatchMetadata(): indexer 10.0.2.13:9100
+2020-02-17T11:44:11.992+00:00 [Info] WatchMetadata(): successfully reach indexer at 10.0.2.13:9100.
+2020-02-17T11:44:11.992+00:00 [Info] MetadataProvider.WatchMetadata(): indexer 10.0.2.8:9100
+2020-02-17T11:44:12.019+00:00 [Info] WatchMetadata(): successfully reach indexer at 10.0.2.8:9100.
+2020-02-17T11:44:12.030+00:00 [Info] MetadataProvider: Updating indexer version to 4
+2020-02-17T11:44:12.030+00:00 [Info] initialized currmeta 3 force true 
+2020-02-17T11:44:12.030+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] started poolsize 5000 overflow 30 low WM 1000 relConn batch size 100 ...
+2020-02-17T11:44:12.030+00:00 [Info] [GsiScanClient:"10.0.2.11:9101"] started ...
+2020-02-17T11:44:12.031+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] open new connection ...
+2020-02-17T11:44:12.034+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] started poolsize 5000 overflow 30 low WM 1000 relConn batch size 100 ...
+2020-02-17T11:44:12.034+00:00 [Info] [GsiScanClient:"10.0.2.13:9101"] started ...
+2020-02-17T11:44:12.035+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] open new connection ...
+2020-02-17T11:44:12.036+00:00 [Info] servicesChangeNotifier: Creating new notifier instance for http://%40cbq-engine-cbauth@127.0.0.1:8091, default
+2020-02-17T11:44:12.038+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] started poolsize 5000 overflow 30 low WM 1000 relConn batch size 100 ...
+2020-02-17T11:44:12.038+00:00 [Info] [GsiScanClient:"10.0.2.8:9101"] started ...
+2020-02-17T11:44:12.039+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] open new connection ...
+2020-02-17T11:44:12.040+00:00 [Info] GsiClient::UpdateUsecjson: using collatejson as data format between indexer and GsiClient
+2020-02-17T11:44:12.040+00:00 [Info] GsiClient::UpdateUsecjson: using collatejson as data format between indexer and GsiClient
+2020-02-17T11:44:12.040+00:00 [Info] GSIC[default/cms-1581939851811006482] started ...
+2020-02-17T11:44:12.040+00:00 [Info] Recieve security change notification. encryption=false
+2020-02-17T11:44:12.049+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:44:12.051+00:00 [Info] serviceChangeNotifier: received ServiceChangeNotification
+2020-02-17T11:44:12.055+00:00 [Info] Certificate refreshed successfully
+_time=2020-02-17T11:44:12.055+00:00 _level=INFO _msg=n1fty: server: http://127.0.0.1:8091, namespace: default, keyspace: cms 
+2020-02-17T11:44:12.074+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:44:12.084+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:12.084+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:12.089+00:00 [Info] switched currmeta from 3 -> 3 force true 
+2020-02-17T11:44:12.090+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:44:12.114+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:12.114+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:12.116+00:00 [Info] switched currmeta from 3 -> 3 force true 
+2020-02-17T11:44:12.237+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:44:12.237+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:44:12.238+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:44:23.706+00:00 [Info] send prepare create request to watcher 10.0.2.8:9100
+2020-02-17T11:44:23.707+00:00 [Info] send prepare create request to watcher 10.0.2.11:9100
+2020-02-17T11:44:23.707+00:00 [Info] send prepare create request to watcher 10.0.2.13:9100
+2020-02-17T11:44:23.708+00:00 [Info] Indexer 10.0.2.11:9100 accept prepare request. Index (cms, #primary)
+2020-02-17T11:44:23.708+00:00 [Info] Indexer 10.0.2.8:9100 accept prepare request. Index (cms, #primary)
+2020-02-17T11:44:23.708+00:00 [Info] Indexer 10.0.2.13:9100 accept prepare request. Index (cms, #primary)
+2020-02-17T11:44:23.774+00:00 [Info] Planner::processCreateToken: There is no create token to process for node 10.0.2.11:8091
+2020-02-17T11:44:23.777+00:00 [Info] Planner::processCreateToken: There is no create token to process for node 10.0.2.13:8091
+2020-02-17T11:44:23.780+00:00 [Info] Planner::processCreateToken: There is no create token to process for node 10.0.2.8:8091
+2020-02-17T11:44:23.805+00:00 [Info] Planner::processDeleteToken: There is no delete token to process for node 10.0.2.11:8091
+2020-02-17T11:44:23.808+00:00 [Info] Planner::processDeleteToken: There is no delete token to process for node 10.0.2.13:8091
+2020-02-17T11:44:23.811+00:00 [Info] Planner::processDeleteToken: There is no delete token to process for node 10.0.2.8:8091
+2020-02-17T11:44:23.835+00:00 [Info] Planner::processDropInstanceToken: There is no drop instance token to process for node 10.0.2.11:8091
+2020-02-17T11:44:23.838+00:00 [Info] Planner::processDropInstanceToken: There is no drop instance token to process for node 10.0.2.13:8091
+2020-02-17T11:44:23.841+00:00 [Info] Planner::processDropInstanceToken: There is no drop instance token to process for node 10.0.2.8:8091
+2020-02-17T11:44:24.945+00:00 [Info] ************ Indexer Layout *************
+2020-02-17T11:44:24.945+00:00 [Info] Score: 1.414213562373095
+2020-02-17T11:44:24.945+00:00 [Info] variation: 1.414213562373095
+2020-02-17T11:44:24.945+00:00 [Info] ElapsedTime: 1s
+2020-02-17T11:44:24.945+00:00 [Info] ConvergenceTime: 1s
+2020-02-17T11:44:24.945+00:00 [Info] Iteration: 110000
+2020-02-17T11:44:24.945+00:00 [Info] Move: 110000
+2020-02-17T11:44:24.945+00:00 [Info] ----------------------------------------
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Memory Mean 67390311 (64.2684M)
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Memory Deviation 95304291 (90.8893M) (141.42%)
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Memory Utilization 0.2510
+2020-02-17T11:44:24.945+00:00 [Info] Indexer CPU Mean 0.0000
+2020-02-17T11:44:24.945+00:00 [Info] Indexer CPU Deviation 0.00 (0.00%)
+2020-02-17T11:44:24.945+00:00 [Info] Indexer CPU Utilization 0.0000
+2020-02-17T11:44:24.945+00:00 [Info] Indexer IO Mean 0.0000
+2020-02-17T11:44:24.945+00:00 [Info] Indexer IO Deviation 0.00 (0.00%)
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Drain Rate Mean 0.0000
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Drain Rate Deviation 0.00 (0.00%)
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Scan Rate Mean 0.0000
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Scan Rate Deviation 0.00 (0.00%)
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Data Size Mean 67390311 (64.2684M)
+2020-02-17T11:44:24.945+00:00 [Info] Indexer Data Size Deviation 95304291 (90.8893M) (141.42%)
+2020-02-17T11:44:24.945+00:00 [Info] Total Index Data (from non-deleted node) 0
+2020-02-17T11:44:24.945+00:00 [Info] Index Data Moved (exclude new node) 0 (0.00%)
+2020-02-17T11:44:24.945+00:00 [Info] No. Index (from non-deleted node) 0
+2020-02-17T11:44:24.945+00:00 [Info] No. Index Moved (exclude new node) 0 (0.00%)
+2020-02-17T11:44:24.945+00:00 [Info] ----------------------------------------
+2020-02-17T11:44:24.945+00:00 [Info] Number of indexes: 1
+2020-02-17T11:44:24.945+00:00 [Info] Number of indexers: 3
+2020-02-17T11:44:24.945+00:00 [Info] Avg Index Size: 202170933 (192.805M)
+2020-02-17T11:44:24.945+00:00 [Info] Max Index Size: 202170933 (192.805M)
+2020-02-17T11:44:24.945+00:00 [Info] Max Indexer Overhead: 0 (0)
+2020-02-17T11:44:24.945+00:00 [Info] Avg Index Cpu: 0.0000
+2020-02-17T11:44:24.945+00:00 [Info] Max Index Cpu: 0.0000
+2020-02-17T11:44:24.945+00:00 [Info] Num Estimation Run: 1
+2020-02-17T11:44:24.945+00:00 [Info] ----------------------------------------
+2020-02-17T11:44:24.945+00:00 [Info] Memory Quota 268435456 (256M)
+2020-02-17T11:44:24.945+00:00 [Info] CPU Quota 4
+2020-02-17T11:44:24.945+00:00 [Info] Max Cpu Utilization -1
+2020-02-17T11:44:24.945+00:00 [Info] Max Memory Utilization -1
+2020-02-17T11:44:24.945+00:00 [Info] ----------------------------------------
+2020-02-17T11:44:24.945+00:00 [Info] Total iteration: 110000
+2020-02-17T11:44:24.945+00:00 [Info] RandomSwap time: 0ns
+2020-02-17T11:44:24.945+00:00 [Info] RandomSwap call: 0
+2020-02-17T11:44:24.945+00:00 [Info] RandomSwap iteration: 0
+2020-02-17T11:44:24.945+00:00 [Info] RandomMove time: 0ns
+2020-02-17T11:44:24.945+00:00 [Info] RandomMove call: 0 (empty index 0)
+2020-02-17T11:44:24.945+00:00 [Info] ExhaustMove time: 362ms
+2020-02-17T11:44:24.945+00:00 [Info] ExhaustMove call: 110000
+2020-02-17T11:44:24.945+00:00 [Info] ExhaustMove average time: 3us
+2020-02-17T11:44:24.945+00:00 [Info] ExhaustSwap time: 0ns
+2020-02-17T11:44:24.945+00:00 [Info] ExhaustSwap call: 0
+2020-02-17T11:44:24.945+00:00 [Info] ----------------------------------------
+2020-02-17T11:44:24.945+00:00 [Info] 
+2020-02-17T11:44:24.945+00:00 [Info] Indexer serverGroup:Group 1, nodeId:10.0.2.11:8091, nodeUUID:e2a2c7da05001b61d5128ac80c037dc5, useLiveData:true
+2020-02-17T11:44:24.945+00:00 [Info] Indexer total memory:0 (0), mem:0 (0), overhead:0 (0), min:0 (0), data:0 (0) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:0
+2020-02-17T11:44:24.945+00:00 [Info] Indexer isDeleted:false isNew:false exclude: meetConstraint:true
+2020-02-17T11:44:24.945+00:00 [Info] 
+2020-02-17T11:44:24.945+00:00 [Info] Indexer serverGroup:Group 1, nodeId:10.0.2.13:8091, nodeUUID:3f1adf42289fac35f84a33ceb7f5d2d2, useLiveData:true
+2020-02-17T11:44:24.945+00:00 [Info] Indexer total memory:0 (0), mem:0 (0), overhead:0 (0), min:0 (0), data:0 (0) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:0
+2020-02-17T11:44:24.945+00:00 [Info] Indexer isDeleted:false isNew:true exclude: meetConstraint:true
+2020-02-17T11:44:24.945+00:00 [Info] 
+2020-02-17T11:44:24.945+00:00 [Info] Indexer serverGroup:Group 1, nodeId:10.0.2.8:8091, nodeUUID:c17ce99f3cb0cec8038043e30471d33f, useLiveData:true
+2020-02-17T11:44:24.945+00:00 [Info] Indexer total memory:202170933 (192.805M), mem:202170933 (192.805M), overhead:0 (0), min:202170933 (192.805M), data:202170933 (192.805M) cpu:0.0000, io:0 (0), scan:0 drain:0 numIndexes:1
+2020-02-17T11:44:24.945+00:00 [Info] Indexer isDeleted:false isNew:true exclude: meetConstraint:true
+2020-02-17T11:44:24.945+00:00 [Info] 		------------------------------------------------------------------------------------------------------------------
+2020-02-17T11:44:24.945+00:00 [Info] 		Index name:#primary 0, bucket:cms, defnId:11998205180710471750, instId:15753108143539953695, Partition: 0, new/moved:true
+2020-02-17T11:44:24.945+00:00 [Info] 		Index total memory:202170933 (192.805M), mem:202170933 (192.805M), overhead:0 (0), min:202170933 (192.805M), data:202170933 (192.805M) cpu:0.0000 io:0 (0) scan:0 drain:0
+2020-02-17T11:44:24.945+00:00 [Info] 		Index resident:0% build:0% estimated:true equivCheck:true pendingCreate:false pendingDelete:false
+2020-02-17T11:44:24.945+00:00 [Info] ****************************************
+2020-02-17T11:44:24.948+00:00 [Info] send commit create request to watcher 10.0.2.8:9100
+2020-02-17T11:44:24.948+00:00 [Info] send commit create request to watcher 10.0.2.13:9100
+2020-02-17T11:44:24.949+00:00 [Info] send commit create request to watcher 10.0.2.11:9100
+2020-02-17T11:44:25.038+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:25.038+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:25.040+00:00 [Info] switched currmeta from 3 -> 5 force true 
+2020-02-17T11:44:25.162+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:25.162+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:25.164+00:00 [Info] switched currmeta from 5 -> 7 force true 
+2020-02-17T11:44:25.185+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:25.186+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:25.188+00:00 [Info] switched currmeta from 7 -> 7 force true 
+2020-02-17T11:44:25.353+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:25.353+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:25.357+00:00 [Info] switched currmeta from 7 -> 8 force true 
+2020-02-17T11:44:27.183+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:44:27.262+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:27.262+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:27.265+00:00 [Info] switched currmeta from 8 -> 8 force true 
+2020-02-17T11:44:27.922+00:00 [Info] CreateIndex 11998205180710471750 cms/#primary using:GSI exprType:N1QL whereExpr:<ud>()</ud> secExprs:<ud>([])</ud> desc:[] isPrimary:true scheme:SINGLE  partitionKeys:<ud>([])</ud> with: - elapsed(4.215826267s) err(<nil>)
+2020-02-17T11:44:27.923+00:00 [Info] metadata provider version changed 8 -> 9
+2020-02-17T11:44:27.923+00:00 [Info] switched currmeta from 8 -> 9 force false 
+2020-02-17T11:44:27.923+00:00 [Info] GsiClient::UpdateUsecjson: using collatejson as data format between indexer and GsiClient
+2020-02-17T11:44:27.944+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:27.944+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:27.947+00:00 [Info] switched currmeta from 9 -> 9 force true 
+2020-02-17T11:44:30.923+00:00 [Info] Rollback time has changed for index inst 7798310626537674961. New rollback time 1581939865126371726
+2020-02-17T11:44:32.176+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:44:32.214+00:00 [Info] Refreshing indexer list due to cluster changes or auto-refresh.
+2020-02-17T11:44:32.214+00:00 [Info] Refreshed Indexer List: [10.0.2.11:9100 10.0.2.13:9100 10.0.2.8:9100]
+2020-02-17T11:44:32.222+00:00 [Info] switched currmeta from 9 -> 9 force true 
+2020-02-17T11:44:42.076+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:44:42.087+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:45:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:45:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:45:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:45:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:45:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:45:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:45:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:45:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:45:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:45:12.046+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:45:12.049+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:45:12.059+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:45:12.077+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:45:12.091+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:45:42.077+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:45:42.087+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:46:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:46:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:46:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:46:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:46:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:46:12.030+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:46:12.030+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:46:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:46:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:46:12.060+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:46:12.062+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:46:12.074+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:46:12.078+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:46:12.092+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:46:42.078+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:46:42.089+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:47:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:47:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:47:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:47:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:47:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:47:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:47:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:47:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:47:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:47:12.074+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:47:12.076+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:47:12.079+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:47:12.087+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:47:12.090+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:47:42.079+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:47:42.089+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:48:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:48:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:48:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:48:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:48:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:48:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:48:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:48:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:48:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:48:12.079+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:48:12.088+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:48:12.090+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:48:12.090+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:48:12.101+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:48:42.080+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:48:42.090+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:49:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:49:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:49:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:49:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:49:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:49:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:49:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:49:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:49:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:49:12.080+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:49:12.091+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:49:12.102+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:49:12.105+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:49:12.115+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:49:42.081+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:49:42.092+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:50:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:50:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:50:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:50:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:50:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:50:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:50:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:50:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:50:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:50:12.081+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:50:12.094+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:50:12.115+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:50:12.120+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:50:12.130+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:50:42.082+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:50:42.092+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:51:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:51:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:51:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:51:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:51:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:51:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:51:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:51:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:51:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:51:12.082+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:51:12.094+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:51:12.130+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:51:12.134+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:51:12.145+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:51:42.082+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:51:42.093+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:52:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:52:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:52:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:52:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:52:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:52:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:52:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:52:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:52:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:52:12.083+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:52:12.093+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:52:12.144+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:52:12.148+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:52:12.158+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:52:42.083+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:52:42.098+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:53:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:53:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:53:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:53:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:53:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:53:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:53:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:53:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:53:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:53:12.084+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:53:12.095+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:53:12.158+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:53:12.161+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:53:12.172+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:53:42.084+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:53:42.100+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:54:12.031+00:00 [Info] connected with 3 indexers
+2020-02-17T11:54:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:54:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:54:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:54:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:54:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:54:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:54:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:54:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:54:12.085+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:54:12.096+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:54:12.174+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:54:12.174+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:54:12.188+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:54:42.085+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:54:42.097+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:55:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:55:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:55:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:55:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:55:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:55:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:55:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:55:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:55:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:55:12.086+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:55:12.097+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:55:12.187+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:55:12.187+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:55:12.202+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:55:42.086+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:55:42.099+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:56:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:56:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:56:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:56:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:56:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:56:12.030+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:56:12.030+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:56:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:56:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:56:12.086+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:56:12.100+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:56:12.199+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:56:12.199+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:56:12.215+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:56:42.087+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:56:42.098+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:57:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:57:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:57:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:57:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:57:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:57:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:57:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:57:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:57:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:57:12.087+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:57:12.097+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:57:12.212+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:57:12.212+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:57:12.229+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:57:42.088+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:57:42.100+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:58:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:58:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:58:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:58:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:58:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:58:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:58:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:58:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:58:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:58:12.088+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:58:12.100+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:58:12.226+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:58:12.227+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:58:12.243+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:58:42.089+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:58:42.104+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:59:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T11:59:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T11:59:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T11:59:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T11:59:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T11:59:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T11:59:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T11:59:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T11:59:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T11:59:12.089+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:59:12.101+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T11:59:12.241+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T11:59:12.241+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T11:59:12.258+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T11:59:42.090+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T11:59:42.099+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:00:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:00:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:00:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:00:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:00:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:00:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:00:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:00:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:00:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:00:12.090+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:00:12.100+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:00:12.254+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:00:12.254+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:00:12.272+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:00:42.091+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:00:42.104+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:01:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:01:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:01:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:01:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:01:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:01:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:01:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:01:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:01:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:01:12.092+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:01:12.102+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:01:12.269+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:01:12.277+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:01:12.285+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:01:42.092+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:01:42.110+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:02:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:02:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:02:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:02:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:02:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:02:12.030+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:02:12.030+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:02:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:02:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:02:12.093+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:02:12.103+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:02:12.282+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:02:12.292+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:02:12.298+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:02:42.093+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:02:42.108+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:03:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:03:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:03:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:03:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:03:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:03:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:03:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:03:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:03:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:03:12.093+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:03:12.108+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:03:12.295+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:03:12.312+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:03:12.313+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:03:42.094+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:03:42.107+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:04:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:04:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:04:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:04:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:04:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:04:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:04:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:04:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:04:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:04:12.094+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:04:12.107+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:04:12.309+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:04:12.326+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:04:12.327+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:04:42.095+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:04:42.106+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:05:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:05:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:05:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:05:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:05:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:05:12.030+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:05:12.030+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:05:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:05:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:05:12.095+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:05:12.109+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:05:12.322+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:05:12.339+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:05:12.340+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:05:42.096+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:05:42.107+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:06:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:06:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:06:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:06:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:06:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:06:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:06:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:06:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:06:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:06:12.096+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:06:12.108+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:06:12.340+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:06:12.353+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:06:12.353+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:06:42.097+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:06:42.108+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:07:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:07:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:07:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:07:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:07:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:07:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:07:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:07:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:07:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:07:12.097+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:07:12.108+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:07:12.354+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:07:12.367+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:07:12.367+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:07:42.098+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:07:42.109+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:08:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:08:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:08:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:08:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:08:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:08:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:08:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:08:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:08:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:08:12.098+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:08:12.109+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:08:12.370+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:08:12.380+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:08:12.380+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:08:42.099+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:08:42.108+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:09:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:09:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:09:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:09:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:09:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:09:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:09:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:09:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:09:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:09:12.099+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:09:12.110+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:09:12.385+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:09:12.393+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:09:12.393+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:09:42.100+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:09:42.112+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:10:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:10:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:10:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:10:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:10:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:10:12.030+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:10:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:10:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:10:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:10:12.100+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:10:12.111+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:10:12.399+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:10:12.406+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:10:12.406+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:10:42.101+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:10:42.110+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:11:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:11:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:11:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:11:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:11:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:11:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:11:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:11:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:11:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:11:12.101+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:11:12.112+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:11:12.413+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:11:12.417+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:11:12.417+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:11:42.102+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:11:42.113+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:12:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:12:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:12:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:12:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:12:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:12:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:12:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:12:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:12:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:12:12.102+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:12:12.118+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:12:12.426+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:12:12.430+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:12:12.430+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:12:42.103+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:12:42.113+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:13:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:13:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:13:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:13:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:13:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:13:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:13:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:13:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:13:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:13:12.103+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:13:12.117+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:13:12.439+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:13:12.444+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:13:12.444+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:13:42.104+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:13:42.116+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:14:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:14:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:14:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:14:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:14:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:14:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:14:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:14:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:14:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:14:12.104+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:14:12.116+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:14:12.453+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:14:12.457+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:14:12.458+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:14:42.105+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:14:42.118+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:15:12.031+00:00 [Info] connected with 3 indexers
+2020-02-17T12:15:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:15:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:15:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:15:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:15:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:15:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:15:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:15:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:15:12.105+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:15:12.122+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:15:12.468+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:15:12.473+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:15:12.473+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:15:42.106+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:15:42.120+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:16:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:16:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:16:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:16:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:16:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:16:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:16:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:16:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:16:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:16:12.106+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:16:12.116+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:16:12.481+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:16:12.486+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:16:12.486+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:16:42.107+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:16:42.118+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:17:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:17:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:17:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:17:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:17:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:17:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:17:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:17:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:17:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:17:12.107+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:17:12.117+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:17:12.496+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:17:12.500+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:17:12.500+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:17:42.108+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:17:42.119+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:18:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:18:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:18:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:18:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:18:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:18:12.030+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:18:12.030+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:18:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:18:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:18:12.109+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:18:12.123+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:18:12.511+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:18:12.515+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:18:12.515+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:18:42.110+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:18:42.122+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:19:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:19:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:19:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:19:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:19:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:19:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:19:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:19:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:19:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:19:12.110+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:19:12.122+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:19:12.527+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:19:12.530+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:19:12.530+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:19:42.110+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:19:42.121+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:20:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:20:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:20:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:20:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:20:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:20:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:20:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:20:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:20:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:20:12.111+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:20:12.125+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:20:12.543+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:20:12.543+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:20:12.543+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:20:42.111+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:20:42.123+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:21:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:21:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:21:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:21:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:21:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:21:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:21:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:21:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:21:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:21:12.112+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:21:12.123+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:21:12.557+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:21:12.557+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:21:12.558+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:21:42.113+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:21:42.123+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:22:12.031+00:00 [Info] connected with 3 indexers
+2020-02-17T12:22:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:22:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:22:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:22:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:22:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:22:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:22:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:22:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:22:12.113+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:22:12.124+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:22:12.571+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:22:12.571+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:22:12.571+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:22:42.114+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:22:42.123+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:23:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:23:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:23:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:23:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:23:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:23:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:23:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:23:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:23:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:23:12.114+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:23:12.125+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:23:12.585+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:23:12.585+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:23:12.587+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:23:42.115+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:23:42.127+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:24:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:24:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:24:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:24:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:24:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:24:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:24:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:24:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:24:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:24:12.115+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:24:12.128+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:24:12.600+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:24:12.601+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:24:12.606+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:24:42.116+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:24:42.126+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:25:12.031+00:00 [Info] connected with 3 indexers
+2020-02-17T12:25:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:25:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:25:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:25:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:25:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:25:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:25:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:25:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:25:12.117+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:25:12.128+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:25:12.613+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:25:12.616+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:25:12.620+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:25:42.117+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:25:42.133+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:26:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:26:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:26:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:26:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:26:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:26:12.030+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:26:12.030+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:26:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:26:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:26:12.117+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:26:12.134+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:26:12.628+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:26:12.631+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:26:12.634+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:26:42.118+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:26:42.129+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:27:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:27:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:27:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:27:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:27:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:27:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:27:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:27:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:27:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:27:12.118+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:27:12.131+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:27:12.643+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:27:12.646+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:27:12.650+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:27:42.119+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:27:42.129+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:28:12.031+00:00 [Info] connected with 3 indexers
+2020-02-17T12:28:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:28:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:28:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:28:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:28:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:28:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:28:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:28:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:28:12.119+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:28:12.133+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:28:12.659+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:28:12.659+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:28:12.663+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:28:42.120+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:28:42.137+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:29:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:29:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:29:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:29:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:29:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:29:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:29:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:29:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:29:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:29:12.121+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:29:12.132+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:29:12.673+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:29:12.675+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:29:12.678+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:29:42.122+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:29:42.136+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:30:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:30:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:30:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:30:12.030+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:30:12.030+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:30:12.030+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:30:12.030+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:30:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:30:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:30:12.123+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:30:12.133+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:30:12.688+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:30:12.689+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:30:12.693+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:30:42.123+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:30:42.134+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:31:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:31:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:31:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:31:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:31:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:31:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:31:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:31:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:31:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:31:12.124+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:31:12.134+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:31:12.702+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:31:12.704+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:31:12.706+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:31:42.124+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:31:42.140+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:32:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:32:12.030+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:32:12.030+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:32:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:32:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:32:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:32:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:32:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:32:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:32:12.125+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:32:12.136+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:32:12.718+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:32:12.719+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:32:12.721+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:32:42.125+00:00 [INFO]  Trying with http://10.0.2.13:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:32:42.137+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:33:12.030+00:00 [Info] connected with 3 indexers
+2020-02-17T12:33:12.031+00:00 [Info] index 11998205180710471750 has replicas [7798310626537674961]: 
+2020-02-17T12:33:12.031+00:00 [Info] index 11998205180710471750 has equivalents [11998205180710471750]: 
+2020-02-17T12:33:12.031+00:00 [Info] client load stats {"7798310626537674961": 0}
+2020-02-17T12:33:12.031+00:00 [Info] client hit stats {"7798310626537674961": 0}
+2020-02-17T12:33:12.031+00:00 [Info] client pending item stats {"7798310626537674961": 9223372036854775807}
+2020-02-17T12:33:12.031+00:00 [Info] client stats current {"7798310626537674961": true}
+2020-02-17T12:33:12.041+00:00 [Info] num concurrent scans {0}
+2020-02-17T12:33:12.041+00:00 [Info] average scan response {0 ms}
+2020-02-17T12:33:12.126+00:00 [INFO]  Trying with http://10.0.2.11:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:33:12.137+00:00 [INFO] Got new configuration for bucket cms 
+2020-02-17T12:33:12.734+00:00 [Info] [Queryport-connpool:10.0.2.11:9101] active conns 0, free conns 1
+2020-02-17T12:33:12.735+00:00 [Info] [Queryport-connpool:10.0.2.8:9101] active conns 0, free conns 1
+2020-02-17T12:33:12.735+00:00 [Info] [Queryport-connpool:10.0.2.13:9101] active conns 0, free conns 1
+2020-02-17T12:33:42.126+00:00 [INFO]  Trying with http://10.0.2.8:8091/pools/default/bucketsStreaming/cms 
+2020-02-17T12:33:42.137+00:00 [INFO] Got new configuration for bucket cms 

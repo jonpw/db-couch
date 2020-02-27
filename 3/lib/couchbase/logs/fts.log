@@ -1,0 +1,392 @@
+2020/02/17 11:39:21 cbauth: key: fts/remoteClients registered for tls config updates
+2020-02-17T11:39:21.461+00:00 [INFO] main: /opt/couchbase/bin/cbft started (v0.6.0/5.5.0)
+2020-02-17T11:39:21.461+00:00 [INFO] main: file descriptor limit current: 1048576 max: 1048576
+2020-02-17T11:39:21.461+00:00 [INFO]   -authType="cbauth"
+2020-02-17T11:39:21.461+00:00 [INFO]   -bindGrpc="10.0.2.13:9130,0.0.0.0:9130"
+2020-02-17T11:39:21.461+00:00 [INFO]   -bindGrpcSsl="10.0.2.13:19130,0.0.0.0:19130"
+2020-02-17T11:39:21.461+00:00 [INFO]   -bindHttp="10.0.2.13:8094,0.0.0.0:8094"
+2020-02-17T11:39:21.461+00:00 [INFO]   -bindHttps=":18094"
+2020-02-17T11:39:21.461+00:00 [INFO]   -cfgConnect="metakv"
+2020-02-17T11:39:21.461+00:00 [INFO]   -container=""
+2020-02-17T11:39:21.461+00:00 [INFO]   -dataDir="/opt/couchbase/var/lib/couchbase/data/@fts"
+2020-02-17T11:39:21.461+00:00 [INFO]   -extras="10.0.2.13:8091"
+2020-02-17T11:39:21.461+00:00 [INFO]   -help="false"
+2020-02-17T11:39:21.462+00:00 [INFO]   -options="startCheckServer=skip,slowQueryLogTimeout=5s,defaultMaxPartitionsPerPIndex=171,bleveMaxResultWindow=10000,failoverAssignAllPrimaries=false,hideUI=true,cbaudit=true,ipv6=false,ftsMemoryQuota=262144000,maxReplicasAllowed=3,bucketTypesAllowed=membase:ephemeral,http2=true,vbuckets=1024"
+2020-02-17T11:39:21.462+00:00 [INFO]   -register="wanted"
+2020-02-17T11:39:21.462+00:00 [INFO]   -server="http://127.0.0.1:8091"
+2020-02-17T11:39:21.462+00:00 [INFO]   -staticDir="static"
+2020-02-17T11:39:21.462+00:00 [INFO]   -staticETag=""
+2020-02-17T11:39:21.462+00:00 [INFO]   -tags="feed,janitor,pindex,queryer,cbauth_service"
+2020-02-17T11:39:21.462+00:00 [INFO]   -tlsCertFile="/opt/couchbase/var/lib/couchbase/config/memcached-cert.pem"
+2020-02-17T11:39:21.462+00:00 [INFO]   -tlsKeyFile="/opt/couchbase/var/lib/couchbase/config/memcached-key.pem"
+2020-02-17T11:39:21.462+00:00 [INFO]   -uuid="3f1adf42289fac35f84a33ceb7f5d2d2"
+2020-02-17T11:39:21.462+00:00 [INFO]   -version="false"
+2020-02-17T11:39:21.462+00:00 [INFO]   -weight="1"
+2020-02-17T11:39:21.462+00:00 [INFO]   GOMAXPROCS=4
+2020-02-17T11:39:21.462+00:00 [INFO] main: registered bleve stores
+2020-02-17T11:39:21.462+00:00 [INFO]   gtreap
+2020-02-17T11:39:21.462+00:00 [INFO]   boltdb
+2020-02-17T11:39:21.462+00:00 [INFO]   metrics
+2020-02-17T11:39:21.462+00:00 [INFO]   goleveldb
+2020-02-17T11:39:21.462+00:00 [INFO]   moss
+2020-02-17T11:39:21.463+00:00 [INFO] main: curr dir: "/opt/couchbase/var/lib/couchbase"
+2020-02-17T11:39:21.463+00:00 [INFO] main: data dir: "/opt/couchbase/var/lib/couchbase/data/@fts"
+2020-02-17T11:39:21.500+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020-02-17T11:39:21.500+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020-02-17T11:39:21.500+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+2020-02-17T11:39:21.500+00:00 [INFO] app_herder: memQuota: 262144000, appQuota: 262144000, indexQuota: 196608000, queryQuota: 235929600
+2020-02-17T11:39:21.500+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020-02-17T11:39:21.500+00:00 [INFO] cbauth: received  security change notification, code: 3
+2020-02-17T11:39:21.512+00:00 [INFO] manager: setting the nodeDefs implVersion to 5.5.0
+2020-02-17T11:39:21.512+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020-02-17T11:39:21.523+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+2020-02-17T11:39:21.523+00:00 [INFO] cfg_metakv: Set, key: nodeDefs-known, cas: 1, split: true, nodeUUID: 3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.524+00:00 [INFO] cfg_metakv: Set split, key: nodeDefs-known, added: map[3f1adf42289fac35f84a33ceb7f5d2d2:true], removed: map[], updated: map[]
+2020-02-17T11:39:21.525+00:00 [INFO] cfg_metakv: Set split, key: nodeDefs-known, childPath: /fts/cbgt/cfg/nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.538+00:00 [INFO] cbauth: notifying configs change for key: fts/remoteClients
+2020-02-17T11:39:21.547+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2, key: nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2, deletion: false
+2020-02-17T11:39:21.570+00:00 [INFO] manager: setting the nodeDefs implVersion to 5.5.0
+2020-02-17T11:39:21.570+00:00 [INFO] cfg_metakv: Set, key: nodeDefs-wanted, cas: 3, split: true, nodeUUID: 3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.571+00:00 [INFO] cfg_metakv: Set split, key: nodeDefs-wanted, added: map[3f1adf42289fac35f84a33ceb7f5d2d2:true], removed: map[], updated: map[]
+2020-02-17T11:39:21.571+00:00 [INFO] cfg_metakv: Set split, key: nodeDefs-wanted, childPath: /fts/cbgt/cfg/nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.577+00:00 [INFO] manager: loading dataDir...
+2020-02-17T11:39:21.580+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2, key: nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2, deletion: false
+2020-02-17T11:39:21.586+00:00 [INFO] manager: loading dataDir... done
+2020-02-17T11:39:21.587+00:00 [INFO] main: custom jsoniter json implementation enabled
+2020-02-17T11:39:21.587+00:00 [INFO] janitor: awakes, op: kick, msg: start
+2020-02-17T11:39:21.628+00:00 [INFO] Using plain authentication for user <ud>@fts</ud> 
+2020-02-17T11:39:21.630+00:00 [INFO] Using plain authentication for user <ud>@fts</ud> 
+2020-02-17T11:39:21.630+00:00 [INFO] Using plain authentication for user <ud>@fts</ud> 
+2020-02-17T11:39:21.631+00:00 [INFO] Using plain authentication for user <ud>@fts</ud> 
+2020-02-17T11:39:21.632+00:00 [INFO] Using plain authentication for user <ud>@fts</ud> 
+2020-02-17T11:39:21.632+00:00 [INFO] audit: created new audit service
+2020-02-17T11:39:21.632+00:00 [INFO] cbauth: key: fts/grpc-ssl registered for tls config updates
+2020-02-17T11:39:21.637+00:00 [INFO] main: ctl starting, dryRun: false, waitForMemberNodes: 30, verbose: 3, maxConcurrentPartitionMovesPerNode: 1
+2020-02-17T11:39:21.637+00:00 [INFO] init_grpc: GrpcServer Started at 0.0.0.0:9130
+2020-02-17T11:39:21.640+00:00 [INFO] init_grpc: GrpcServer Started at 0.0.0.0:19130
+2020-02-17T11:39:21.660+00:00 [WARN] janitor: JanitorOnce, err: janitor: skipped on nil planPIndexes -- cbgt.(*Manager).JanitorLoop() at manager_janitor.go:97
+2020-02-17T11:39:21.696+00:00 [INFO] ctl: kickIndexDefs, kind: init
+2020-02-17T11:39:21.747+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2, key: nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2, deletion: false
+2020-02-17T11:39:21.747+00:00 [INFO] planner: nodesRemove: []string(nil)
+2020-02-17T11:39:21.747+00:00 [INFO] planner: step planner
+2020-02-17T11:39:21.781+00:00 [INFO] janitor: awakes, op: kick, msg: cfg changed, key: nodeDefs-wanted
+2020-02-17T11:39:21.781+00:00 [INFO] ctl: kickIndexDefs, kind: cfgEvent
+2020-02-17T11:39:21.781+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2, key: nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2, deletion: false
+2020-02-17T11:39:21.805+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/e2a2c7da05001b61d5128ac80c037dc5, key: nodeDefs-known/e2a2c7da05001b61d5128ac80c037dc5, deletion: false
+2020-02-17T11:39:21.852+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020-02-17T11:39:21.852+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/e2a2c7da05001b61d5128ac80c037dc5, key: nodeDefs-wanted/e2a2c7da05001b61d5128ac80c037dc5, deletion: false
+2020-02-17T11:39:21.962+00:00 [WARN] janitor: JanitorOnce, err: janitor: skipped on nil planPIndexes -- cbgt.(*Manager).JanitorLoop() at manager_janitor.go:97
+2020-02-17T11:39:21.967+00:00 [INFO] ctl: run, kind: nodeDefs-wanted, updated memberNodes: {e2a2c7da05001b61d5128ac80c037dc5;3f1adf42289fac35f84a33ceb7f5d2d2;c17ce99f3cb0cec8038043e30471d33f;}
+2020-02-17T11:39:21.967+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020-02-17T11:39:21.975+00:00 [INFO] janitor: awakes, op: kick, msg: cfg changed, key: nodeDefs-wanted
+2020-02-17T11:39:21.975+00:00 [INFO] ctl: kickIndexDefs, kind: cfgEvent
+2020-02-17T11:39:21.976+00:00 [INFO] cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+2020-02-17T11:39:21.994+00:00 [INFO] cbauth: key: fts/https registered for tls config updates
+2020-02-17T11:39:21.994+00:00 [INFO] main: ------------------------------------------------------
+2020-02-17T11:39:21.994+00:00 [INFO] init_http: web UI / REST API is available (via 0.0.0.0): http://10.0.2.13:8094
+2020-02-17T11:39:21.994+00:00 [INFO] main: ------------------------------------------------------
+2020-02-17T11:39:21.994+00:00 [INFO] main: ------------------------------------------------------
+2020-02-17T11:39:21.994+00:00 [INFO] init_http: web UI / REST API is available: https://:18094
+2020-02-17T11:39:21.994+00:00 [INFO] main: ------------------------------------------------------
+2020-02-17T11:39:21.995+00:00 [INFO] main: ------------------------------------------------------
+2020-02-17T11:39:21.995+00:00 [INFO] init_http: web UI / REST API is available: http://0.0.0.0:8094
+2020-02-17T11:39:21.995+00:00 [INFO] main: ------------------------------------------------------
+2020-02-17T11:39:21.995+00:00 [INFO] init_http: Setting up a http limit listener over "0.0.0.0:8094"
+2020-02-17T11:39:21.994+00:00 [INFO] main: cbauth_service registering...
+2020-02-17T11:39:22.001+00:00 [INFO] ctl/manager: GetTaskList, haveTasksRev: , changed, rv: &{Rev:[48] Tasks:[]}
+2020-02-17T11:39:22.003+00:00 [INFO] ctl: run, kind: nodeDefs-wanted, updated memberNodes: {3f1adf42289fac35f84a33ceb7f5d2d2;c17ce99f3cb0cec8038043e30471d33f;e2a2c7da05001b61d5128ac80c037dc5;}
+2020-02-17T11:39:22.003+00:00 [INFO] ctl: kickIndexDefs, kind: cfgEvent
+2020-02-17T11:39:22.007+00:00 [INFO] ctl/manager: GetCurrentTopology, haveTopologyRev: , changed, rv: &{Rev:[52] Nodes:[3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f e2a2c7da05001b61d5128ac80c037dc5] IsBalanced:true Messages:[]}
+2020-02-17T11:39:22.008+00:00 [INFO] ctl/manager: GetNodeInfo
+2020-02-17T11:39:22.023+00:00 [INFO] init_http: Setting up a https limit listener over ":18094"
+2020-02-17T11:39:22.030+00:00 [WARN] janitor: JanitorOnce, err: janitor: skipped on nil planPIndexes -- cbgt.(*Manager).JanitorLoop() at manager_janitor.go:97
+2020-02-17T11:39:22.030+00:00 [INFO] janitor: awakes, op: kick, msg: cfg changed, key: nodeDefs-wanted
+2020-02-17T11:39:22.046+00:00 [INFO] ctl: run, kind: nodeDefs-wanted, updated memberNodes: {3f1adf42289fac35f84a33ceb7f5d2d2;c17ce99f3cb0cec8038043e30471d33f;e2a2c7da05001b61d5128ac80c037dc5;}
+2020-02-17T11:39:22.063+00:00 [WARN] janitor: JanitorOnce, err: janitor: skipped on nil planPIndexes -- cbgt.(*Manager).JanitorLoop() at manager_janitor.go:97
+2020-02-17T11:39:22.115+00:00 [INFO] ctl/manager: PrepareTopologyChange, change: {d363c251a78847fe31f92ebda08ca4e3 [] topology-change-rebalance [{{e2a2c7da05001b61d5128ac80c037dc5 0 <nil>} recovery-full} {{3f1adf42289fac35f84a33ceb7f5d2d2 0 <nil>} recovery-full} {{c17ce99f3cb0cec8038043e30471d33f 0 <nil>} recovery-full}] []}
+2020-02-17T11:39:22.122+00:00 [INFO] ctl/manager: PrepareTopologyChange, done
+2020-02-17T11:39:22.122+00:00 [INFO] ctl/manager: GetTaskList, haveTasksRev: 0, changed, rv: &{Rev:[50] Tasks:[{Rev:[49] ID:prepare:d363c251a78847fe31f92ebda08ca4e3 Type:task-prepared Status:task-running IsCancelable:true Progress:100 DetailedProgress:map[] Description:prepare topology change ErrorMessage: Extra:map[topologyChange:{ID:d363c251a78847fe31f92ebda08ca4e3 CurrentTopologyRev:[] Type:topology-change-rebalance KeepNodes:[{NodeInfo:{NodeID:e2a2c7da05001b61d5128ac80c037dc5 Priority:0 Opaque:<nil>} RecoveryType:recovery-full} {NodeInfo:{NodeID:3f1adf42289fac35f84a33ceb7f5d2d2 Priority:0 Opaque:<nil>} RecoveryType:recovery-full} {NodeInfo:{NodeID:c17ce99f3cb0cec8038043e30471d33f Priority:0 Opaque:<nil>} RecoveryType:recovery-full}] EjectNodes:[]}]}]}
+2020-02-17T11:39:22.195+00:00 [INFO] ctl/manager: CancelTask, taskId: prepare:d363c251a78847fe31f92ebda08ca4e3, taskRev: 
+2020-02-17T11:39:22.195+00:00 [INFO] ctl/manager: CancelTask, taskId: prepare:d363c251a78847fe31f92ebda08ca4e3, taskRev: [], nil taskHandle
+2020-02-17T11:39:22.195+00:00 [INFO] ctl/manager: CancelTask, taskId: prepare:d363c251a78847fe31f92ebda08ca4e3, taskRev: [], done
+2020-02-17T11:39:22.195+00:00 [INFO] ctl/manager: GetTaskList, haveTasksRev: 2, changed, rv: &{Rev:[51] Tasks:[]}
+2020-02-17T11:44:21.883+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T11:44:21.883+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.00010441011725534032,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 4,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T11:49:21.882+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T11:49:21.882+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.00004062247223626188,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 7,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T11:54:21.881+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T11:54:21.881+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.000026727756166723353,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 10,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T11:59:21.884+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T11:59:21.884+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.00002176312629989798,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 12,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T12:04:21.883+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T12:04:21.883+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.000017326216442527766,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 15,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T12:09:21.890+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T12:09:21.890+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.000015462616043625823,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 17,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T12:14:21.884+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T12:14:21.884+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.00001344509554717113,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 20,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T12:19:21.883+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T12:19:21.883+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.00001192086420352662,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 23,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T12:24:21.884+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T12:24:21.884+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.00001125719060915724,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 25,
+    "total_queries_rejected_by_herder": 0
+}
+2020-02-17T12:29:21.883+00:00 [INFO] managerStats: {"feeds":{},"pindexes":{},"manager":{"TotKick":0,"TotSetOptions":0,"TotRegisterFeed":0,"TotUnregisterFeed":0,"TotRegisterPIndex":0,"TotUnregisterPIndex":0,"TotSaveNodeDef":2,"TotSaveNodeDefNil":0,"TotSaveNodeDefGetErr":0,"TotSaveNodeDefSetErr":0,"TotSaveNodeDefRetry":0,"TotSaveNodeDefSame":0,"TotSaveNodeDefOk":2,"TotCreateIndex":0,"TotCreateIndexOk":0,"TotDeleteIndex":0,"TotDeleteIndexOk":0,"TotIndexControl":0,"TotIndexControlOk":0,"TotDeleteIndexBySource":0,"TotDeleteIndexBySourceErr":0,"TotDeleteIndexBySourceOk":0,"TotPlannerOpStart":0,"TotPlannerOpRes":0,"TotPlannerOpErr":0,"TotPlannerOpDone":0,"TotPlannerNOOP":0,"TotPlannerNOOPOk":0,"TotPlannerKick":0,"TotPlannerKickStart":0,"TotPlannerKickChanged":0,"TotPlannerKickErr":0,"TotPlannerKickOk":0,"TotPlannerUnknownErr":0,"TotPlannerSubscriptionEvent":0,"TotPlannerStop":0,"TotJanitorOpStart":4,"TotJanitorOpRes":4,"TotJanitorOpErr":4,"TotJanitorOpDone":4,"TotJanitorNOOP":0,"TotJanitorNOOPOk":0,"TotJanitorKick":4,"TotJanitorKickStart":4,"TotJanitorKickErr":4,"TotJanitorKickOk":0,"TotJanitorClosePIndex":0,"TotJanitorRemovePIndex":0,"TotJanitorRestartPIndex":0,"TotJanitorLoadDataDir":0,"TotJanitorUnknownErr":0,"TotJanitorSubscriptionEvent":3,"TotJanitorStop":0,"TotRefreshLastNodeDefs":6,"TotRefreshLastIndexDefs":1,"TotRefreshLastPlanPIndexes":0}}
+2020-02-17T12:29:21.883+00:00 [INFO] stats: {
+    "batch_bytes_added": 0,
+    "batch_bytes_removed": 0,
+    "curr_batches_blocked_by_herder": 0,
+    "num_bytes_used_ram": 72284408,
+    "pct_cpu_gc": 0.000010339632227515973,
+    "tot_batches_flushed_on_maxops": 0,
+    "tot_batches_flushed_on_timer": 0,
+    "tot_bleve_dest_closed": 0,
+    "tot_bleve_dest_opened": 0,
+    "tot_grpc_listeners_closed": 0,
+    "tot_grpc_listeners_opened": 1,
+    "tot_grpc_queryreject_on_memquota": 0,
+    "tot_grpcs_listeners_closed": 0,
+    "tot_grpcs_listeners_opened": 1,
+    "tot_http_limitlisteners_closed": 0,
+    "tot_http_limitlisteners_opened": 1,
+    "tot_https_limitlisteners_closed": 0,
+    "tot_https_limitlisteners_opened": 1,
+    "tot_queryreject_on_memquota": 0,
+    "tot_remote_grpc": 0,
+    "tot_remote_grpc_tls": 0,
+    "tot_remote_http": 0,
+    "tot_remote_http2": 0,
+    "total_gc": 28,
+    "total_queries_rejected_by_herder": 0
+}

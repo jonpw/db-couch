@@ -1,0 +1,48 @@
+2020/02/17 11:39:21 cbauth: key: fts/remoteClients registered for tls config updates
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-known/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, key: nodeDefs-wanted/c17ce99f3cb0cec8038043e30471d33f, deletion: false
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/version, key: version, deletion: false
+_time=2020-02-17T11:39:21.268+00:00 _level=INFO _msg= Initialization of cbauth succeeded  
+_time=2020-02-17T11:39:21.286+00:00 _level=INFO _msg=New store created with url http://127.0.0.1:8091 
+_time=2020-02-17T11:39:21.298+00:00 _level=INFO _msg=pollEOF: About to start stdin polling 
+_time=2020-02-17T11:39:21.334+00:00 _level=INFO _msg=New settings received: {"timeout":0,"n1ql-feat-ctrl":12,"max-parallelism":1,"query.settings.curl_whitelist":{"all_access":false,"allowed_urls":[],"disallowed_urls":[]},"query.settings.tmp_space_dir":"/opt/couchbase/var/lib/couchbase/tmp","completed-limit":4000,"prepared-limit":16384,"pipeline-batch":16,"pipeline-cap":512,"scan-cap":512,"loglevel":"info","completed-threshold":1000,"query.settings.tmp_space_size":5120} 
+_time=2020-02-17T11:39:21.334+00:00 _level=INFO _msg=Settings notifier from metakv 
+_time=2020-02-17T11:39:21.334+00:00 _level=INFO _msg=New Value for curl whitelist <ud>map[allowed_urls:[] disallowed_urls:[] all_access:false]</ud> 
+2020-02-17T11:39:21.346+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:39:21.348+00:00 [Info] GSIC - Setting config map[query_tmpspace_dir:/opt/couchbase/var/lib/couchbase/tmp query_tmpspace_limit:5120]
+2020-02-17T11:39:21.347+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:39:21.347+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+_time=2020-02-17T11:39:21.348+00:00 _level=INFO _msg= GSI indexer settings have been updated map[query_tmpspace_dir:/opt/couchbase/var/lib/couchbase/tmp query_tmpspace_limit:5120] 
+_time=2020-02-17T11:39:21.349+00:00 _level=INFO _msg= n1fty indexer settings have been updated map[query_tmpspace_dir:/opt/couchbase/var/lib/couchbase/tmp query_tmpspace_limit:5120] 
+_time=2020-02-17T11:39:21.349+00:00 _level=INFO _msg=Query Configuration changed for loglevel. New value is info 
+_time=2020-02-17T11:39:21.349+00:00 _level=INFO _msg=Query Configuration changed for n1ql-feat-ctrl. New value is 12 
+_time=2020-02-17T11:39:21.349+00:00 _level=INFO _msg=Query Configuration changed for pipeline-batch. New value is 16 
+_time=2020-02-17T11:39:21.349+00:00 _level=INFO _msg=Query Configuration changed for scan-cap. New value is 512 
+_time=2020-02-17T11:39:21.349+00:00 _level=INFO _msg=Query Configuration changed for timeout. New value is 0 
+_time=2020-02-17T11:39:21.350+00:00 _level=INFO _msg=Query Configuration changed for completed-threshold. New value is 1000 
+_time=2020-02-17T11:39:21.350+00:00 _level=INFO _msg=Query Configuration changed for completed-limit. New value is 4000 
+_time=2020-02-17T11:39:21.350+00:00 _level=INFO _msg=Query Configuration changed for max-parallelism. New value is 1 
+_time=2020-02-17T11:39:21.350+00:00 _level=INFO _msg=Query Configuration changed for prepared-limit. New value is 16384 
+_time=2020-02-17T11:39:21.350+00:00 _level=INFO _msg=Query Configuration changed for pipeline-cap. New value is 512 
+2020-02-17T11:39:21.350+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020-02-17T11:39:21.350+00:00 [INFO] Using plain authentication for user <ud>@cbq-engine</ud> 
+2020/02/17 11:39:21 audit: created new audit service
+_time=2020-02-17T11:39:21.372+00:00 _level=INFO _msg=cbq-engine started timeout=0s max-concurrency=4 pipeline-cap=512 pipeline-batch=16 request-cap=256 max-index-api=4 servicers=16 plus-servicers=64 n1ql_feat_cntrl=12 version=2.0.0-N1QL datastore=http://127.0.0.1:8091 loglevel=INFO scan-cap=512 request-size-cap=67108864 
+_time=2020-02-17T11:39:21.374+00:00 _level=INFO _msg=HttpEndpoint: Listen Address=[::]:8093 
+_time=2020-02-17T11:39:21.374+00:00 _level=INFO _msg=Starting audit worker 1 
+_time=2020-02-17T11:39:21.374+00:00 _level=INFO _msg=Starting audit worker 3 
+_time=2020-02-17T11:39:21.374+00:00 _level=INFO _msg=Starting audit worker 4 
+_time=2020-02-17T11:39:21.374+00:00 _level=INFO _msg=Starting audit settings worker 1. 
+_time=2020-02-17T11:39:21.382+00:00 _level=INFO _msg=Starting audit worker 2 
+_time=2020-02-17T11:39:21.382+00:00 _level=INFO _msg= Certificates have been refreshed by ns server  
+_time=2020-02-17T11:39:21.384+00:00 _level=INFO _msg=HttpEndpoint: ListenTLS Address=[::]:18093 
+_time=2020-02-17T11:39:21.384+00:00 _level=ERROR _msg=Updating node-to-node encryption level: {EncryptData:false DisableNonSSLPorts:false} 
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2, key: nodeDefs-known/3f1adf42289fac35f84a33ceb7f5d2d2, deletion: false
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2, key: nodeDefs-wanted/3f1adf42289fac35f84a33ceb7f5d2d2, deletion: false
+2020-02-17T11:39:21.678+00:00 [INFO] e1:ef:e8:44:27:98:c8:4e 5393560370751529868 : Initialized isolate
+2020-02-17T11:39:21.687+00:00 [INFO] Reponse : Message:"Evaluator initialized successfully" 
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-known/e2a2c7da05001b61d5128ac80c037dc5, key: nodeDefs-known/e2a2c7da05001b61d5128ac80c037dc5, deletion: false
+2020/02/17 11:39:21 cfg_metakv: metaKVCallback, path: /fts/cbgt/cfg/nodeDefs-wanted/e2a2c7da05001b61d5128ac80c037dc5, key: nodeDefs-wanted/e2a2c7da05001b61d5128ac80c037dc5, deletion: false
+2020-02-17T11:39:21.864+00:00 [INFO] c8:67:1a:8:b7:e1:e8:3c 6100913002898061420 : Initialized isolate
+2020-02-17T11:39:21.868+00:00 [INFO] Reponse : Message:"Evaluator initialized successfully" 
+_time=2020-02-17T11:39:22.374+00:00 _level=INFO _msg=Starting audit update stream 

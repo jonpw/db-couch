@@ -1,0 +1,534 @@
+2020-02-17T11:39:21.757+00:00 [Info] Started eventing producer version: evt-6.5.0-4960-ee
+2020-02-17T11:39:21.757+00:00 [Info] Setting IP mode to ipv4
+2020-02-17T11:39:21.836+00:00 [INFO] Using plain authentication for user <ud>@eventing</ud> 
+2020-02-17T11:39:21.838+00:00 [INFO] Using plain authentication for user <ud>@eventing</ud> 
+2020-02-17T11:39:21.839+00:00 [INFO] Using plain authentication for user <ud>@eventing</ud> 
+2020-02-17T11:39:21.839+00:00 [INFO] Using plain authentication for user <ud>@eventing</ud> 
+2020-02-17T11:39:21.852+00:00 [INFO] Using plain authentication for user <ud>@eventing</ud> 
+2020/02/17 11:39:21 audit: created new audit service
+2020-02-17T11:39:21.854+00:00 [Info] Supervisor::ServeBackground Spawned up supervision tree, context: SuperSupervisor
+2020-02-17T11:39:21.885+00:00 [Info] ServiceMgr::newServiceMgr config: util.Config{"eventing_admin_http_port":"8096", "eventing_admin_debugger_port":"9140", "eventing_admin_ssl_port":"18096", "eventing_admin_ssl_cert":"/opt/couchbase/var/lib/couchbase/config/memcached-cert.pem", "eventing_admin_ssl_key":"/opt/couchbase/var/lib/couchbase/config/memcached-key.pem", "eventing_dir":"/opt/couchbase/var/lib/couchbase/data/@eventing", "rest_port":"8091", "uuid":"e2a2c7da05001b61d5128ac80c037dc5"} rebalanceRunning: false
+2020-02-17T11:39:21.886+00:00 [Info] ServiceMgr::initService adminHTTPPort: 8096 adminSSLPort: 18096
+2020-02-17T11:39:21.886+00:00 [Info] ServiceMgr::initService certFile: /opt/couchbase/var/lib/couchbase/config/memcached-cert.pem keyFile: /opt/couchbase/var/lib/couchbase/config/memcached-key.pem
+2020-02-17T11:39:21.888+00:00 [Info] Registering against cbauth_service, uuid: e2a2c7da05001b61d5128ac80c037dc5
+2020-02-17T11:39:21.911+00:00 [Info] ServiceMgr::getConfig Retrieving config from metakv: map[enable_debugger:false ram_quota:256]
+2020-02-17T11:39:21.918+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:39:21.924+00:00 [Info] ServiceMgr::initService SSL server started: &{:18096 0xc4200ab230 0xc420097680 1m0s 0s 1m0s 0s 0 map[] <nil> <nil> 0 0 {{0 0} 0} <nil> {0 0} map[] map[] <nil> []}
+2020-02-17T11:39:21.923+00:00 [Info] ServiceMgr::initService Admin HTTP server started: :8096
+2020-02-17T11:39:21.930+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:39:21.943+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}
+2020-02-17T11:39:21.947+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0}
+2020-02-17T11:39:21.952+00:00 [Info] SuperSupervisor::GlobalConfigChangeCallback [0] Path => /eventing/settings/config value => {
+ "enable_debugger": false,
+ "ram_quota": 256
+}
+2020-02-17T11:39:21.952+00:00 [Info] SuperSupervisor::HandleGlobalConfigChange [0] Config key: enable_debugger value: false
+2020-02-17T11:39:21.952+00:00 [Info] SuperSupervisor::HandleGlobalConfigChange [0] Config key: ram_quota value: 256
+2020-02-17T11:39:21.957+00:00 [Info] SuperSupervisor::TopologyChangeNotifCallback [0] Path => /eventing/rebalanceToken/f6cbfdbe59488c9dd011939b2a645ecc value => f6cbfdbe59488c9dd011939b2a645ecc
+2020-02-17T11:39:21.966+00:00 [Info] SuperSupervisor::checkIfNodeInCluster [0] Node not part of cluster. Current node uuid: e2a2c7da05001b61d5128ac80c037dc5 keepNodes: [c17ce99f3cb0cec8038043e30471d33f]
+2020-02-17T11:39:21.966+00:00 [Info] SuperSupervisor::TopologyChangeNotifCallback [0] Node not part of cluster. Exiting callback
+2020-02-17T11:39:22.581+00:00 [Info] ServiceMgr::GetNodeInfo nodeInfo: &service.NodeInfo{NodeID:"e2a2c7da05001b61d5128ac80c037dc5", Priority:0, Opaque:interface {}(nil)}
+2020-02-17T11:39:22.597+00:00 [Info] ServiceMgr::PrepareTopologyChange change: service.TopologyChange{ID:"26095a67324ad75ff6b03efa4870b674", CurrentTopologyRev:service.Revision(nil), Type:"topology-change-rebalance", KeepNodes:[]struct { NodeInfo service.NodeInfo "json:\"nodeInfo\""; RecoveryType service.RecoveryType "json:\"recoveryType\"" }{struct { NodeInfo service.NodeInfo "json:\"nodeInfo\""; RecoveryType service.RecoveryType "json:\"recoveryType\"" }{NodeInfo:service.NodeInfo{NodeID:"e2a2c7da05001b61d5128ac80c037dc5", Priority:0, Opaque:interface {}(nil)}, RecoveryType:"recovery-full"}, struct { NodeInfo service.NodeInfo "json:\"nodeInfo\""; RecoveryType service.RecoveryType "json:\"recoveryType\"" }{NodeInfo:service.NodeInfo{NodeID:"3f1adf42289fac35f84a33ceb7f5d2d2", Priority:0, Opaque:interface {}(nil)}, RecoveryType:"recovery-full"}, struct { NodeInfo service.NodeInfo "json:\"nodeInfo\""; RecoveryType service.RecoveryType "json:\"recoveryType\"" }{NodeInfo:service.NodeInfo{NodeID:"c17ce99f3cb0cec8038043e30471d33f", Priority:0, Opaque:interface {}(nil)}, RecoveryType:"recovery-full"}}, EjectNodes:[]service.NodeInfo{}}
+2020-02-17T11:39:22.597+00:00 [Info] ServiceMgr::PrepareTopologyChange ejectNodeUUIDs: [] keepNodeUUIDs: [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f]
+2020-02-17T11:39:22.597+00:00 [Info] SuperSupervisor::NotifyPrepareTopologyChange [0] Updating keepNodes [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f]
+2020-02-17T11:39:22.610+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:39:22.613+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:39:22.729+00:00 [Info] SuperSupervisor::TopologyChangeNotifCallback [0] Path => /eventing/rebalanceToken/f6cbfdbe59488c9dd011939b2a645ecc value => 
+2020-02-17T11:39:22.746+00:00 [Info] SuperSupervisor::TopologyChangeNotifCallback [0] Path => /eventing/rebalanceToken/26095a67324ad75ff6b03efa4870b674 value => 26095a67324ad75ff6b03efa4870b674
+2020-02-17T11:39:22.758+00:00 [Info] SuperSupervisor::TopologyChangeNotifCallback [0] Apps in primary store: [], running apps: map[]
+2020-02-17T11:39:22.817+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:39:22.826+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:39:22.827+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:39:22.827+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:39:52.610+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:39:52.613+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:39:52.827+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:39:52.827+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:39:52.828+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:39:52.829+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:40:21.921+00:00 [Info] {"allocated":4119560,"heap_allocated":4119560,"heap_idle":1957888,"heap_in_use":5447680,"heap_objects":14723,"heap_os_related":0,"heap_system":7405568,"last_gc_cycle":"2020-02-17 11:40:07.209026185 +0000 UTC","memory_allocations":31962,"memory_frees":17239,"next_gc_cycle":"6ms","num_gc":3,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":59280,"stack_system":983040,"total_allocated":8256072}
+2020-02-17T11:40:22.828+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:40:22.829+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:40:22.830+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:40:22.830+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:40:52.831+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:40:52.831+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:40:52.832+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:40:52.832+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:41:21.921+00:00 [Info] {"allocated":3357408,"heap_allocated":3357408,"heap_idle":2621440,"heap_in_use":4784128,"heap_objects":13137,"heap_os_related":0,"heap_system":7405568,"last_gc_cycle":"2020-02-17 11:41:17.298483502 +0000 UTC","memory_allocations":44777,"memory_frees":31640,"next_gc_cycle":"6ms","num_gc":5,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":58520,"stack_system":983040,"total_allocated":12842968}
+2020-02-17T11:41:22.832+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:41:22.832+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:41:22.834+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:41:22.834+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:41:52.834+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:41:52.834+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:41:52.836+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:41:52.836+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:42:21.922+00:00 [Info] {"allocated":5224512,"heap_allocated":5224512,"heap_idle":942080,"heap_in_use":6496256,"heap_objects":17257,"heap_os_related":0,"heap_system":7438336,"last_gc_cycle":"2020-02-17 11:41:52.340336793 +0000 UTC","memory_allocations":57564,"memory_frees":40307,"next_gc_cycle":"6ms","num_gc":6,"stack_cache_in_use":6944,"stack_in_use":950272,"stack_span_in_use":66880,"stack_system":950272,"total_allocated":17423464}
+2020-02-17T11:42:22.836+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:42:22.836+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:42:22.839+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:42:22.840+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:42:52.840+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:42:52.840+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:42:52.841+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:42:52.841+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:43:21.921+00:00 [Info] {"allocated":4487576,"heap_allocated":4487576,"heap_idle":1777664,"heap_in_use":5660672,"heap_objects":15647,"heap_os_related":0,"heap_system":7438336,"last_gc_cycle":"2020-02-17 11:43:02.417692172 +0000 UTC","memory_allocations":70353,"memory_frees":54706,"next_gc_cycle":"6ms","num_gc":8,"stack_cache_in_use":6944,"stack_in_use":950272,"stack_span_in_use":60040,"stack_system":950272,"total_allocated":22007152}
+2020-02-17T11:43:22.841+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:43:22.842+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:43:22.842+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:43:22.843+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:43:52.843+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:43:52.843+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:43:52.844+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:43:52.844+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:44:21.921+00:00 [Info] {"allocated":3991712,"heap_allocated":3991712,"heap_idle":2138112,"heap_in_use":5267456,"heap_objects":14849,"heap_os_related":0,"heap_system":7405568,"last_gc_cycle":"2020-02-17 11:44:07.485182969 +0000 UTC","memory_allocations":83839,"memory_frees":68990,"next_gc_cycle":"6ms","num_gc":10,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":57456,"stack_system":983040,"total_allocated":26651472}
+2020-02-17T11:44:22.844+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:44:22.844+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:44:22.845+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:44:22.846+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:44:52.845+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:44:52.846+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:44:52.847+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:44:52.847+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:45:21.921+00:00 [Info] {"allocated":3279992,"heap_allocated":3279992,"heap_idle":2621440,"heap_in_use":4751360,"heap_objects":12892,"heap_os_related":0,"heap_system":7372800,"last_gc_cycle":"2020-02-17 11:45:17.563076183 +0000 UTC","memory_allocations":96639,"memory_frees":83747,"next_gc_cycle":"6ms","num_gc":12,"stack_cache_in_use":6944,"stack_in_use":1015808,"stack_span_in_use":57456,"stack_system":1015808,"total_allocated":31236232}
+2020-02-17T11:45:22.847+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:45:22.847+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:45:22.848+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:45:22.849+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:45:52.849+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:45:52.849+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:45:52.850+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:45:52.850+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:46:21.921+00:00 [Info] {"allocated":5045888,"heap_allocated":5045888,"heap_idle":1105920,"heap_in_use":6299648,"heap_objects":17181,"heap_os_related":0,"heap_system":7405568,"last_gc_cycle":"2020-02-17 11:45:52.602157151 +0000 UTC","memory_allocations":109404,"memory_frees":92223,"next_gc_cycle":"6ms","num_gc":13,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":65056,"stack_system":983040,"total_allocated":35812760}
+2020-02-17T11:46:22.850+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:46:22.850+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:46:22.852+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:46:22.852+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:46:52.852+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:46:52.852+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:46:52.854+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:46:52.854+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:47:21.921+00:00 [Info] {"allocated":4503744,"heap_allocated":4503744,"heap_idle":1646592,"heap_in_use":5758976,"heap_objects":15846,"heap_os_related":0,"heap_system":7405568,"last_gc_cycle":"2020-02-17 11:47:02.676959573 +0000 UTC","memory_allocations":122197,"memory_frees":106351,"next_gc_cycle":"6ms","num_gc":15,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":61104,"stack_system":983040,"total_allocated":40395664}
+2020-02-17T11:47:22.854+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:47:22.854+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:47:22.855+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:47:22.855+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:47:52.855+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:47:52.855+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:47:52.856+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:47:52.856+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:48:21.921+00:00 [Info] {"allocated":3723960,"heap_allocated":3723960,"heap_idle":2392064,"heap_in_use":5013504,"heap_objects":13987,"heap_os_related":0,"heap_system":7405568,"last_gc_cycle":"2020-02-17 11:48:12.747171001 +0000 UTC","memory_allocations":134985,"memory_frees":120998,"next_gc_cycle":"6ms","num_gc":17,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":57000,"stack_system":983040,"total_allocated":44976440}
+2020-02-17T11:48:22.856+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:48:22.856+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:48:22.859+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:48:22.859+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:48:52.859+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:48:52.859+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:48:52.860+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:48:52.861+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:49:21.921+00:00 [Info] {"allocated":5632568,"heap_allocated":5632568,"heap_idle":581632,"heap_in_use":6823936,"heap_objects":18395,"heap_os_related":0,"heap_system":7405568,"last_gc_cycle":"2020-02-17 11:48:47.784790917 +0000 UTC","memory_allocations":147764,"memory_frees":129369,"next_gc_cycle":"6ms","num_gc":18,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":69312,"stack_system":983040,"total_allocated":49558440}
+2020-02-17T11:49:22.861+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:49:22.861+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:49:22.863+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:49:22.864+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:49:52.863+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:49:52.864+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:49:52.865+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:49:52.866+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:50:21.921+00:00 [Info] {"allocated":4453840,"heap_allocated":4453840,"heap_idle":2752512,"heap_in_use":5701632,"heap_objects":15497,"heap_os_related":0,"heap_system":8454144,"last_gc_cycle":"2020-02-17 11:50:02.863578293 +0000 UTC","memory_allocations":160558,"memory_frees":145061,"next_gc_cycle":"6ms","num_gc":20,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":60344,"stack_system":983040,"total_allocated":54142992}
+2020-02-17T11:50:22.866+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:50:22.866+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:50:22.867+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:50:22.867+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:50:52.867+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:50:52.868+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:50:52.870+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:50:52.870+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:51:21.921+00:00 [Info] {"allocated":3710872,"heap_allocated":3710872,"heap_idle":3375104,"heap_in_use":5079040,"heap_objects":13867,"heap_os_related":0,"heap_system":8454144,"last_gc_cycle":"2020-02-17 11:51:12.947810219 +0000 UTC","memory_allocations":173354,"memory_frees":159487,"next_gc_cycle":"6ms","num_gc":22,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":58976,"stack_system":983040,"total_allocated":58728168}
+2020-02-17T11:51:22.870+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:51:22.870+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:51:22.871+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:51:22.871+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:51:52.871+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:51:52.872+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:51:52.872+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:51:52.873+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:52:21.921+00:00 [Info] {"allocated":5630584,"heap_allocated":5630584,"heap_idle":1679360,"heap_in_use":6774784,"heap_objects":18378,"heap_os_related":0,"heap_system":8454144,"last_gc_cycle":"2020-02-17 11:51:47.985622001 +0000 UTC","memory_allocations":186111,"memory_frees":167733,"next_gc_cycle":"6ms","num_gc":23,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":68552,"stack_system":983040,"total_allocated":63304232}
+2020-02-17T11:52:22.872+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:52:22.873+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:52:22.873+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:52:22.874+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:52:52.874+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:52:52.875+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:52:52.875+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:52:52.876+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:53:21.921+00:00 [Info] {"allocated":4960736,"heap_allocated":4960736,"heap_idle":2228224,"heap_in_use":6225920,"heap_objects":17090,"heap_os_related":0,"heap_system":8454144,"last_gc_cycle":"2020-02-17 11:52:53.05010077 +0000 UTC","memory_allocations":198898,"memory_frees":181808,"next_gc_cycle":"6ms","num_gc":25,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":64448,"stack_system":983040,"total_allocated":67886800}
+2020-02-17T11:53:22.875+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:53:22.876+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:53:22.876+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:53:22.877+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:53:52.876+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:53:52.877+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:53:52.877+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:53:52.878+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:54:21.921+00:00 [Info] {"allocated":4517400,"heap_allocated":4517400,"heap_idle":2678784,"heap_in_use":5775360,"heap_objects":15971,"heap_os_related":0,"heap_system":8454144,"last_gc_cycle":"2020-02-17 11:54:03.127415911 +0000 UTC","memory_allocations":211707,"memory_frees":195736,"next_gc_cycle":"6ms","num_gc":27,"stack_cache_in_use":6944,"stack_in_use":983040,"stack_span_in_use":62168,"stack_system":983040,"total_allocated":72473528}
+2020-02-17T11:54:22.877+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:54:22.878+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:54:22.878+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:54:22.879+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:54:52.879+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:54:52.880+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:54:52.883+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:54:52.899+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:55:21.921+00:00 [Info] {"allocated":3698768,"heap_allocated":3698768,"heap_idle":3350528,"heap_in_use":5070848,"heap_objects":13802,"heap_os_related":0,"heap_system":8421376,"last_gc_cycle":"2020-02-17 11:55:13.20548539 +0000 UTC","memory_allocations":224497,"memory_frees":210695,"next_gc_cycle":"6ms","num_gc":29,"stack_cache_in_use":6944,"stack_in_use":1015808,"stack_span_in_use":59280,"stack_system":1015808,"total_allocated":77056192}
+2020-02-17T11:55:22.884+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:55:22.889+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:55:22.899+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:55:22.901+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:55:52.889+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:55:52.890+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:55:52.901+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:55:52.906+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:56:21.921+00:00 [Info] {"allocated":5602784,"heap_allocated":5602784,"heap_idle":1572864,"heap_in_use":6848512,"heap_objects":18186,"heap_os_related":0,"heap_system":8421376,"last_gc_cycle":"2020-02-17 11:55:48.239503861 +0000 UTC","memory_allocations":237269,"memory_frees":219083,"next_gc_cycle":"6ms","num_gc":30,"stack_cache_in_use":6944,"stack_in_use":1015808,"stack_span_in_use":69920,"stack_system":1015808,"total_allocated":81634384}
+2020-02-17T11:56:22.891+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:56:22.891+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:56:22.906+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:56:22.907+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:56:52.892+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:56:52.893+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:56:52.908+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:56:52.909+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:57:21.921+00:00 [Info] {"allocated":4965136,"heap_allocated":4965136,"heap_idle":2203648,"heap_in_use":6217728,"heap_objects":17129,"heap_os_related":0,"heap_system":8421376,"last_gc_cycle":"2020-02-17 11:56:53.31972923 +0000 UTC","memory_allocations":250061,"memory_frees":232932,"next_gc_cycle":"6ms","num_gc":32,"stack_cache_in_use":6944,"stack_in_use":1015808,"stack_span_in_use":64904,"stack_system":1015808,"total_allocated":86217880}
+2020-02-17T11:57:22.894+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:57:22.896+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:57:22.909+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:57:22.910+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:57:52.896+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:57:52.897+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:57:52.910+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:57:52.911+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:58:21.921+00:00 [Info] {"allocated":4422744,"heap_allocated":4422744,"heap_idle":2768896,"heap_in_use":5652480,"heap_objects":15538,"heap_os_related":0,"heap_system":8421376,"last_gc_cycle":"2020-02-17 11:58:03.39525069 +0000 UTC","memory_allocations":262864,"memory_frees":247326,"next_gc_cycle":"6ms","num_gc":34,"stack_cache_in_use":6944,"stack_in_use":1015808,"stack_span_in_use":60648,"stack_system":1015808,"total_allocated":90804992}
+2020-02-17T11:58:22.898+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:58:22.898+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:58:22.912+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:58:22.912+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:58:52.899+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:58:52.900+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:58:52.913+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:58:52.913+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:59:21.924+00:00 [Info] {"allocated":3660712,"heap_allocated":3660712,"heap_idle":3416064,"heap_in_use":5005312,"heap_objects":13825,"heap_os_related":0,"heap_system":8421376,"last_gc_cycle":"2020-02-17 11:59:13.471169841 +0000 UTC","memory_allocations":275644,"memory_frees":261819,"next_gc_cycle":"6ms","num_gc":36,"stack_cache_in_use":6944,"stack_in_use":1015808,"stack_span_in_use":59432,"stack_system":1015808,"total_allocated":95384968}
+2020-02-17T11:59:22.900+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:59:22.901+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:59:22.914+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:59:22.915+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:59:52.901+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T11:59:52.902+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T11:59:52.915+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T11:59:52.916+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:00:21.921+00:00 [Info] {"allocated":5606896,"heap_allocated":5606896,"heap_idle":1630208,"heap_in_use":6791168,"heap_objects":18227,"heap_os_related":0,"heap_system":8421376,"last_gc_cycle":"2020-02-17 11:59:48.508049441 +0000 UTC","memory_allocations":288409,"memory_frees":270182,"next_gc_cycle":"6ms","num_gc":37,"stack_cache_in_use":6944,"stack_in_use":1015808,"stack_span_in_use":68856,"stack_system":1015808,"total_allocated":99962360}
+2020-02-17T12:00:22.902+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:00:22.903+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:00:22.916+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:00:22.917+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:00:52.903+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:00:52.905+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:00:52.918+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:00:52.918+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:01:21.921+00:00 [Info] {"allocated":5180152,"heap_allocated":5180152,"heap_idle":2039808,"heap_in_use":6381568,"heap_objects":17268,"heap_os_related":0,"heap_system":8421376,"last_gc_cycle":"2020-02-17 12:00:53.575254622 +0000 UTC","memory_allocations":301198,"memory_frees":283930,"next_gc_cycle":"6ms","num_gc":39,"stack_cache_in_use":6944,"stack_in_use":1015808,"stack_span_in_use":65664,"stack_system":1015808,"total_allocated":104548512}
+2020-02-17T12:01:22.905+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:01:22.906+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:01:22.919+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:01:22.920+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:01:52.906+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:01:52.907+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:01:52.920+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:01:52.921+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:02:21.921+00:00 [Info] {"allocated":4513528,"heap_allocated":4513528,"heap_idle":2539520,"heap_in_use":5816320,"heap_objects":15939,"heap_os_related":0,"heap_system":8355840,"last_gc_cycle":"2020-02-17 12:02:03.649104928 +0000 UTC","memory_allocations":314004,"memory_frees":298065,"next_gc_cycle":"6ms","num_gc":41,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":63384,"stack_system":1048576,"total_allocated":109136584}
+2020-02-17T12:02:22.907+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:02:22.908+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:02:22.921+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:02:22.922+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:02:52.909+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:02:52.910+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:02:52.922+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:02:52.923+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:03:21.921+00:00 [Info] {"allocated":3733360,"heap_allocated":3733360,"heap_idle":3284992,"heap_in_use":5103616,"heap_objects":14048,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:03:13.727539685 +0000 UTC","memory_allocations":326786,"memory_frees":312738,"next_gc_cycle":"6ms","num_gc":43,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":59280,"stack_system":1048576,"total_allocated":113718560}
+2020-02-17T12:03:22.910+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:03:22.911+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:03:22.924+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:03:22.924+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:03:52.911+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:03:52.912+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:03:52.925+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:03:52.926+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:04:21.922+00:00 [Info] {"allocated":3079872,"heap_allocated":3079872,"heap_idle":3866624,"heap_in_use":4521984,"heap_objects":12930,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:04:18.798392863 +0000 UTC","memory_allocations":339585,"memory_frees":326655,"next_gc_cycle":"6ms","num_gc":45,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":55936,"stack_system":1048576,"total_allocated":118303976}
+2020-02-17T12:04:22.913+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:04:22.914+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:04:22.926+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:04:22.928+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:04:52.914+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:04:52.915+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:04:52.928+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:04:52.929+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:05:21.921+00:00 [Info] {"allocated":3081152,"heap_allocated":3081152,"heap_idle":3866624,"heap_in_use":4521984,"heap_objects":12933,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:05:18.861418785 +0000 UTC","memory_allocations":352371,"memory_frees":339438,"next_gc_cycle":"6ms","num_gc":47,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":55328,"stack_system":1048576,"total_allocated":122890032}
+2020-02-17T12:05:22.915+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:05:22.916+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:05:22.929+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:05:22.930+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:05:52.917+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:05:52.917+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:05:52.930+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:05:52.931+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:06:21.922+00:00 [Info] {"allocated":3081392,"heap_allocated":3081392,"heap_idle":3833856,"heap_in_use":4554752,"heap_objects":12915,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:06:18.928857356 +0000 UTC","memory_allocations":365179,"memory_frees":352264,"next_gc_cycle":"6ms","num_gc":49,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":56544,"stack_system":1048576,"total_allocated":127480376}
+2020-02-17T12:06:22.918+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:06:22.919+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:06:22.931+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:06:22.932+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:06:52.920+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:06:52.921+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:06:52.932+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:06:52.933+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:07:21.921+00:00 [Info] {"allocated":5262904,"heap_allocated":5262904,"heap_idle":1802240,"heap_in_use":6586368,"heap_objects":17540,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:06:53.968725981 +0000 UTC","memory_allocations":377942,"memory_frees":360402,"next_gc_cycle":"6ms","num_gc":50,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":68552,"stack_system":1048576,"total_allocated":132056648}
+2020-02-17T12:07:22.921+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:07:22.922+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:07:22.934+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:07:22.934+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:07:52.922+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:07:52.923+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:07:52.935+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:07:52.935+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:08:21.921+00:00 [Info] {"allocated":4430760,"heap_allocated":4430760,"heap_idle":2637824,"heap_in_use":5750784,"heap_objects":15598,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:08:04.039521339 +0000 UTC","memory_allocations":390742,"memory_frees":375144,"next_gc_cycle":"6ms","num_gc":52,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":61864,"stack_system":1048576,"total_allocated":136644352}
+2020-02-17T12:08:22.924+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:08:22.924+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:08:22.936+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:08:22.937+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:08:52.925+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:08:52.926+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:08:52.938+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:08:52.938+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:09:21.921+00:00 [Info] {"allocated":3628960,"heap_allocated":3628960,"heap_idle":3366912,"heap_in_use":5021696,"heap_objects":13870,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:09:14.113181157 +0000 UTC","memory_allocations":403534,"memory_frees":389664,"next_gc_cycle":"6ms","num_gc":54,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":58824,"stack_system":1048576,"total_allocated":141227448}
+2020-02-17T12:09:22.926+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:09:22.927+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:09:22.939+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:09:22.939+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:09:52.927+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:09:52.928+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:09:52.939+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:09:52.940+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:10:21.921+00:00 [Info] {"allocated":5530576,"heap_allocated":5530576,"heap_idle":1630208,"heap_in_use":6758400,"heap_objects":18245,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:09:49.155592735 +0000 UTC","memory_allocations":416301,"memory_frees":398056,"next_gc_cycle":"6ms","num_gc":55,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":69464,"stack_system":1048576,"total_allocated":145803864}
+2020-02-17T12:10:22.928+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:10:22.930+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:10:22.941+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:10:22.948+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:10:52.930+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:10:52.931+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:10:52.948+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:10:52.949+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:11:21.921+00:00 [Info] {"allocated":4884056,"heap_allocated":4884056,"heap_idle":2211840,"heap_in_use":6176768,"heap_objects":16719,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:10:59.238583118 +0000 UTC","memory_allocations":429093,"memory_frees":412374,"next_gc_cycle":"6ms","num_gc":57,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":65360,"stack_system":1048576,"total_allocated":150386368}
+2020-02-17T12:11:22.931+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:11:22.932+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:11:22.949+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:11:22.949+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:11:52.932+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:11:52.933+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:11:52.950+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:11:52.950+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:12:21.921+00:00 [Info] {"allocated":4160208,"heap_allocated":4160208,"heap_idle":2940928,"heap_in_use":5447680,"heap_objects":15317,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:12:08.887661841 +0000 UTC","memory_allocations":441883,"memory_frees":426566,"next_gc_cycle":"6ms","num_gc":59,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":58216,"stack_system":1048576,"total_allocated":154971064}
+2020-02-17T12:12:22.934+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:12:22.935+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:12:22.951+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:12:22.952+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:12:52.935+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:12:52.936+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:12:52.952+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:12:52.953+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:13:21.921+00:00 [Info] {"allocated":3716752,"heap_allocated":3716752,"heap_idle":3244032,"heap_in_use":5144576,"heap_objects":13954,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:13:14.381062766 +0000 UTC","memory_allocations":454672,"memory_frees":440718,"next_gc_cycle":"6ms","num_gc":61,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":60496,"stack_system":1048576,"total_allocated":159553824}
+2020-02-17T12:13:22.936+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:13:22.938+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:13:22.953+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:13:22.955+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:13:52.938+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:13:52.939+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:13:52.955+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:13:52.957+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:14:21.921+00:00 [Info] {"allocated":5661816,"heap_allocated":5661816,"heap_idle":1490944,"heap_in_use":6897664,"heap_objects":18667,"heap_os_related":0,"heap_system":8388608,"last_gc_cycle":"2020-02-17 12:13:49.418279822 +0000 UTC","memory_allocations":467437,"memory_frees":448770,"next_gc_cycle":"6ms","num_gc":62,"stack_cache_in_use":6944,"stack_in_use":1048576,"stack_span_in_use":70832,"stack_system":1048576,"total_allocated":164129568}
+2020-02-17T12:14:22.940+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:14:22.941+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:14:22.957+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:14:22.958+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:14:52.942+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:14:52.942+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:14:52.958+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:14:52.960+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:15:21.921+00:00 [Info] {"allocated":4917896,"heap_allocated":4917896,"heap_idle":2138112,"heap_in_use":6217728,"heap_objects":17000,"heap_os_related":0,"heap_system":8355840,"last_gc_cycle":"2020-02-17 12:14:59.492161661 +0000 UTC","memory_allocations":480224,"memory_frees":463224,"next_gc_cycle":"6ms","num_gc":64,"stack_cache_in_use":6944,"stack_in_use":1081344,"stack_span_in_use":65056,"stack_system":1081344,"total_allocated":168713304}
+2020-02-17T12:15:22.943+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:15:22.944+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:15:22.960+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:15:22.961+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:15:52.944+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:15:52.945+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:15:52.961+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:15:52.962+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:16:21.924+00:00 [Info] {"allocated":4102384,"heap_allocated":4102384,"heap_idle":2924544,"heap_in_use":5431296,"heap_objects":14851,"heap_os_related":0,"heap_system":8355840,"last_gc_cycle":"2020-02-17 12:16:09.569066842 +0000 UTC","memory_allocations":493036,"memory_frees":478185,"next_gc_cycle":"6ms","num_gc":66,"stack_cache_in_use":6944,"stack_in_use":1081344,"stack_span_in_use":60952,"stack_system":1081344,"total_allocated":173301264}
+2020-02-17T12:16:22.945+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:16:22.946+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:16:22.963+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:16:22.963+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:16:52.947+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:16:52.948+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:16:52.964+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:16:52.964+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:17:21.923+00:00 [Info] {"allocated":3345136,"heap_allocated":3345136,"heap_idle":3522560,"heap_in_use":4833280,"heap_objects":13148,"heap_os_related":0,"heap_system":8355840,"last_gc_cycle":"2020-02-17 12:17:19.642528133 +0000 UTC","memory_allocations":505828,"memory_frees":492680,"next_gc_cycle":"6ms","num_gc":68,"stack_cache_in_use":6944,"stack_in_use":1081344,"stack_span_in_use":59280,"stack_system":1081344,"total_allocated":177886392}
+2020-02-17T12:17:22.948+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:17:22.949+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:17:22.965+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:17:22.969+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:17:52.949+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:17:52.950+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:17:52.969+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:17:52.970+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:18:21.921+00:00 [Info] {"allocated":5321056,"heap_allocated":5321056,"heap_idle":1794048,"heap_in_use":6561792,"heap_objects":18114,"heap_os_related":0,"heap_system":8355840,"last_gc_cycle":"2020-02-17 12:17:51.885178109 +0000 UTC","memory_allocations":518612,"memory_frees":500498,"next_gc_cycle":"6ms","num_gc":69,"stack_cache_in_use":6944,"stack_in_use":1081344,"stack_span_in_use":68096,"stack_system":1081344,"total_allocated":182467928}
+2020-02-17T12:18:22.951+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:18:22.952+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:18:22.970+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:18:22.972+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:18:52.952+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:18:52.953+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:18:52.972+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:18:52.973+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:19:21.921+00:00 [Info] {"allocated":4863888,"heap_allocated":4863888,"heap_idle":2129920,"heap_in_use":6193152,"heap_objects":16597,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:18:59.748365638 +0000 UTC","memory_allocations":531398,"memory_frees":514801,"next_gc_cycle":"6ms","num_gc":71,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":65512,"stack_system":1114112,"total_allocated":187050048}
+2020-02-17T12:19:22.953+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:19:22.954+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:19:22.973+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:19:22.974+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:19:52.954+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:19:52.956+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:19:52.974+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:19:52.975+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:20:21.921+00:00 [Info] {"allocated":4154008,"heap_allocated":4154008,"heap_idle":2883584,"heap_in_use":5439488,"heap_objects":15249,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:20:09.824832803 +0000 UTC","memory_allocations":544203,"memory_frees":528954,"next_gc_cycle":"6ms","num_gc":73,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":60952,"stack_system":1114112,"total_allocated":191637352}
+2020-02-17T12:20:22.956+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:20:22.957+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:20:22.975+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:20:22.976+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:20:52.957+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:20:52.958+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:20:52.976+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:20:52.977+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:21:21.921+00:00 [Info] {"allocated":3347696,"heap_allocated":3347696,"heap_idle":3489792,"heap_in_use":4833280,"heap_objects":13174,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:21:19.915695037 +0000 UTC","memory_allocations":556996,"memory_frees":543822,"next_gc_cycle":"6ms","num_gc":75,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":59584,"stack_system":1114112,"total_allocated":196219280}
+2020-02-17T12:21:22.959+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:21:22.960+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:21:22.977+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:21:22.978+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:21:52.960+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:21:52.961+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:21:52.978+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:21:52.979+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:22:21.921+00:00 [Info] {"allocated":5077360,"heap_allocated":5077360,"heap_idle":2007040,"heap_in_use":6316032,"heap_objects":17388,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:21:54.955828943 +0000 UTC","memory_allocations":569755,"memory_frees":552367,"next_gc_cycle":"6ms","num_gc":76,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":66120,"stack_system":1114112,"total_allocated":200795376}
+2020-02-17T12:22:22.961+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:22:22.962+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:22:22.980+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:22:22.980+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:22:52.962+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:22:52.963+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:22:52.981+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:22:52.982+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:23:21.921+00:00 [Info] {"allocated":4362184,"heap_allocated":4362184,"heap_idle":2678784,"heap_in_use":5644288,"heap_objects":15706,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:23:05.034835195 +0000 UTC","memory_allocations":582561,"memory_frees":566855,"next_gc_cycle":"6ms","num_gc":78,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":62016,"stack_system":1114112,"total_allocated":205383352}
+2020-02-17T12:23:22.964+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:23:22.965+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:23:22.982+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:23:22.983+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:23:52.965+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:23:52.966+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:23:52.983+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:23:52.984+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:24:21.921+00:00 [Info] {"allocated":3647024,"heap_allocated":3647024,"heap_idle":3268608,"heap_in_use":5054464,"heap_objects":14024,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:24:15.120164698 +0000 UTC","memory_allocations":595348,"memory_frees":581324,"next_gc_cycle":"6ms","num_gc":80,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":60192,"stack_system":1114112,"total_allocated":209966112}
+2020-02-17T12:24:22.966+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:24:22.967+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:24:22.985+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:24:22.986+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:24:52.967+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:24:52.968+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:24:52.986+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:24:52.987+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:25:21.921+00:00 [Info] {"allocated":5422056,"heap_allocated":5422056,"heap_idle":1646592,"heap_in_use":6676480,"heap_objects":18337,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:24:50.156302674 +0000 UTC","memory_allocations":608103,"memory_frees":589766,"next_gc_cycle":"6ms","num_gc":81,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":69464,"stack_system":1114112,"total_allocated":214540576}
+2020-02-17T12:25:22.968+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:25:22.970+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:25:22.987+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:25:22.988+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:25:52.970+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:25:52.971+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:25:52.988+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:25:52.989+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:26:21.921+00:00 [Info] {"allocated":4910528,"heap_allocated":4910528,"heap_idle":2072576,"heap_in_use":6250496,"heap_objects":16933,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:26:00.232009331 +0000 UTC","memory_allocations":620900,"memory_frees":603967,"next_gc_cycle":"6ms","num_gc":83,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":67640,"stack_system":1114112,"total_allocated":219125544}
+2020-02-17T12:26:22.971+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:26:22.972+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:26:22.989+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:26:22.990+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:26:52.973+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:26:52.973+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:26:52.991+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:26:52.991+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:27:21.921+00:00 [Info] {"allocated":4111968,"heap_allocated":4111968,"heap_idle":2891776,"heap_in_use":5431296,"heap_objects":14940,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:27:10.289555605 +0000 UTC","memory_allocations":633688,"memory_frees":618748,"next_gc_cycle":"6ms","num_gc":85,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":61256,"stack_system":1114112,"total_allocated":223708064}
+2020-02-17T12:27:22.974+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:27:22.975+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:27:22.992+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:27:22.992+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:27:52.975+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:27:52.976+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:27:52.993+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:27:52.994+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:28:21.921+00:00 [Info] {"allocated":3268096,"heap_allocated":3268096,"heap_idle":3571712,"heap_in_use":4751360,"heap_objects":13193,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:28:20.321611086 +0000 UTC","memory_allocations":646469,"memory_frees":633276,"next_gc_cycle":"6ms","num_gc":87,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":59888,"stack_system":1114112,"total_allocated":228288360}
+2020-02-17T12:28:22.976+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:28:22.977+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:28:22.994+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:28:22.997+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:28:52.977+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:28:52.979+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:28:52.997+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:28:52.998+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:29:21.923+00:00 [Info] {"allocated":5254256,"heap_allocated":5254256,"heap_idle":1867776,"heap_in_use":6455296,"heap_objects":17553,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:28:55.335624208 +0000 UTC","memory_allocations":659237,"memory_frees":641684,"next_gc_cycle":"6ms","num_gc":88,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":67032,"stack_system":1114112,"total_allocated":232867352}
+2020-02-17T12:29:22.979+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:29:22.980+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:29:22.998+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:29:22.999+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:29:52.980+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:29:52.981+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:29:52.999+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:29:53.000+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:30:21.922+00:00 [Info] {"allocated":4554552,"heap_allocated":4554552,"heap_idle":2531328,"heap_in_use":5791744,"heap_objects":16290,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:30:05.365476935 +0000 UTC","memory_allocations":672031,"memory_frees":655741,"next_gc_cycle":"6ms","num_gc":90,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":63384,"stack_system":1114112,"total_allocated":237452528}
+2020-02-17T12:30:22.982+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:30:22.983+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:30:23.000+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:30:23.001+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:30:52.983+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:30:52.984+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:30:53.002+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:30:53.002+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:31:21.921+00:00 [Info] {"allocated":3741792,"heap_allocated":3741792,"heap_idle":3186688,"heap_in_use":5136384,"heap_objects":14119,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:31:15.397418207 +0000 UTC","memory_allocations":684835,"memory_frees":670716,"next_gc_cycle":"6ms","num_gc":92,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":61104,"stack_system":1114112,"total_allocated":242046680}
+2020-02-17T12:31:22.985+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:31:22.986+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:31:23.003+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:31:23.004+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:31:52.986+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:31:52.987+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:31:53.004+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:31:53.005+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:32:21.921+00:00 [Info] {"allocated":5477664,"heap_allocated":5477664,"heap_idle":1654784,"heap_in_use":6668288,"heap_objects":18421,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:31:50.413653085 +0000 UTC","memory_allocations":697603,"memory_frees":679182,"next_gc_cycle":"6ms","num_gc":93,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":68856,"stack_system":1114112,"total_allocated":246624504}
+2020-02-17T12:32:22.987+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:32:22.989+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:32:23.005+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:32:23.006+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:32:52.989+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:32:52.990+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:32:53.007+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:32:53.008+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:33:21.922+00:00 [Info] {"allocated":4840232,"heap_allocated":4840232,"heap_idle":2236416,"heap_in_use":6086656,"heap_objects":16686,"heap_os_related":0,"heap_system":8323072,"last_gc_cycle":"2020-02-17 12:33:00.445857985 +0000 UTC","memory_allocations":710409,"memory_frees":693723,"next_gc_cycle":"6ms","num_gc":95,"stack_cache_in_use":6944,"stack_in_use":1114112,"stack_span_in_use":64296,"stack_system":1114112,"total_allocated":251212304}
+2020-02-17T12:33:22.990+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:33:22.992+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:33:23.008+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:33:23.009+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:33:52.992+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision(nil)
+2020-02-17T12:33:52.993+00:00 [Info] ServiceMgr::GetCurrentTopology rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}
+2020-02-17T12:33:53.009+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision(nil)
+2020-02-17T12:33:53.010+00:00 [Info] ServiceMgr::GetTaskList rev: service.Revision{0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x1}

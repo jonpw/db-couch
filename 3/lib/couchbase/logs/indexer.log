@@ -1,0 +1,1219 @@
+2020-02-17T11:39:20.943+00:00 [Info] Indexer started with command line: [/opt/couchbase/bin/indexer -adminPort=9100 -scanPort=9101 -httpPort=9102 -streamInitPort=9103 -streamCatchupPort=9104 -streamMaintPort=9105 --httpsPort=19102 --certFile=/opt/couchbase/var/lib/couchbase/config/memcached-cert.pem --keyFile=/opt/couchbase/var/lib/couchbase/config/memcached-key.pem -vbuckets=1024 -cluster=127.0.0.1:8091 -storageDir=/opt/couchbase/var/lib/couchbase/data/@2i -diagDir=/opt/couchbase/var/lib/couchbase/crash -nodeUUID=3f1adf42289fac35f84a33ceb7f5d2d2 -ipv6=false -isEnterprise=true]
+2020-02-17T11:39:20.992+00:00 [Info] Indexer::NewIndexer Status Warmup
+2020-02-17T11:39:21.019+00:00 [Info] Setting buffer block size to 16384 bytes
+2020-02-17T11:39:21.019+00:00 [Info] Setting maxcpus = 4
+2020-02-17T11:39:21.019+00:00 [Info] Setting log level to Info
+2020-02-17T11:39:21.020+00:00 [Info] Recieve security change notification. code 3
+2020-02-17T11:39:21.020+00:00 [Info] TLS config refreshed successfully
+2020-02-17T11:39:21.025+00:00 [Info] SettingsMgr:: Dropped request /indexing/settings/config {"indexer.settings.compaction.days_of_week":"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday","indexer.settings.compaction.interval":"00:00,00:00","indexer.settings.compaction.compaction_mode":"circular","indexer.settings.log_level":"info","indexer.settings.persisted_snapshot.interval":5000,"indexer.settings.compaction.min_frag":30,"indexer.settings.inmemory_snapshot.interval":200,"indexer.settings.max_cpu_percent":0,"indexer.settings.storage_mode":"plasma","indexer.settings.recovery.max_rollbacks":2,"indexer.settings.memory_quota":268435456,"indexer.settings.compaction.abort_exceed_interval":false}. Any setting change will get applied once Indexer is ready.
+2020-02-17T11:39:21.026+00:00 [Info] Certificate refreshed successfully
+2020-02-17T11:39:21.026+00:00 [Info] Encryption config refresh successfully.   Encryption enabled=false
+2020-02-17T11:39:21.026+00:00 [Info] security context:  encryptLocalHost true Local IP's: map[127.0.0.1:true 10.0.2.13:true 172.18.0.5:true]
+2020-02-17T11:39:21.104+00:00 [Info] security context initialized
+2020-02-17T11:39:21.104+00:00 [Info] security port mapping updated : map[8093:18093 9101:9101 9105:9105 9999:9999 11210:11207 9100:9100 9102:19102 9103:9103 9104:9104]
+2020-02-17T11:39:21.104+00:00 [Info] Indexer::NewIndexer Build Mode Set Enterprise
+2020-02-17T11:39:21.104+00:00 [Info] Indexer::Cluster Storage Mode Set plasma
+2020-02-17T11:39:21.104+00:00 [Info] memcachedTimeout set to 120
+2020-02-17T11:39:21.104+00:00 [Info] Indexer::NewIndexer Starting with Vbuckets 1024
+2020-02-17T11:39:21.131+00:00 [Info] OperationsMonitor(kvSender) starting monitor ...
+2020-02-17T11:39:21.140+00:00 [Info] [Queryport ":9101"] started ...
+2020-02-17T11:39:21.142+00:00 [Info] Unable to fetch storage mode from metakv during bootrap.  Use storage mode setting for bootstrap
+2020-02-17T11:39:21.150+00:00 [Info] bootstrap storage mode plasma
+2020-02-17T11:39:21.208+00:00 [Info] Starting metadadta repo: quota 1048576 sleep duration 900 threshold 0 min file size 0
+2020-02-17T11:39:21.209+00:00 [INFO][FDB] Forestdb blockcache size 1048576 initialized in 276 us
+
+2020-02-17T11:39:21.219+00:00 [Info] servicesChangeNotifier: Creating new notifier instance for http://%40index-cbauth@127.0.0.1:8091, default
+2020-02-17T11:39:21.223+00:00 [Info] serviceChangeNotifier: received ServiceChangeNotification
+2020-02-17T11:39:21.225+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:39:21.239+00:00 [INFO][FDB] Forestdb opened database file /opt/couchbase/var/lib/couchbase/data/@2i/MetadataStore
+2020-02-17T11:39:21.285+00:00 [Info] EmbeddedServer.runOnce() : Start Running Server
+2020-02-17T11:39:21.307+00:00 [Info] indexer:: Staring http server : :9102
+2020-02-17T11:39:21.307+00:00 [Info] HTTPS server created for :19102
+2020-02-17T11:39:21.309+00:00 [Info] indexer:: SSL server started: :19102
+2020-02-17T11:39:21.309+00:00 [Info] Indexer::indexer version 4
+2020-02-17T11:39:21.309+00:00 [Info] ClustMgr:handleGetLocalValue Key IndexerId
+2020-02-17T11:39:21.309+00:00 [Info] ClustMgr:handleSetLocalValue Key IndexerId Value 3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.319+00:00 [Info] Indexer Id 3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.351+00:00 [Info] KVSender::sendShutdownTopic Projector 10.0.2.11:9999 Topic MAINT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.357+00:00 [Error] KVSender::sendShutdownTopic Unexpected Error During Shutdown Projector 10.0.2.11:9999 Topic MAINT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2. Err projector.topicMissing
+2020-02-17T11:39:21.357+00:00 [Error] KVSender::closeMutationStream MAINT_STREAM  Error Received projector.topicMissing from 10.0.2.11:9999
+2020-02-17T11:39:21.357+00:00 [Info] KVSender::closeMutationStream MAINT_STREAM  Treating projector.topicMissing As Success
+2020-02-17T11:39:21.357+00:00 [Info] KVSender::sendShutdownTopic Projector 10.0.2.13:9999 Topic MAINT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.360+00:00 [Error] KVSender::sendShutdownTopic Unexpected Error During Shutdown Projector 10.0.2.13:9999 Topic MAINT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2. Err projector.topicMissing
+2020-02-17T11:39:21.360+00:00 [Error] KVSender::closeMutationStream MAINT_STREAM  Error Received projector.topicMissing from 10.0.2.13:9999
+2020-02-17T11:39:21.360+00:00 [Info] KVSender::closeMutationStream MAINT_STREAM  Treating projector.topicMissing As Success
+2020-02-17T11:39:21.360+00:00 [Info] KVSender::sendShutdownTopic Projector 10.0.2.8:9999 Topic MAINT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.361+00:00 [Error] KVSender::sendShutdownTopic Unexpected Error During Shutdown Projector 10.0.2.8:9999 Topic MAINT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2. Err projector.topicMissing
+2020-02-17T11:39:21.361+00:00 [Error] KVSender::closeMutationStream MAINT_STREAM  Error Received projector.topicMissing from 10.0.2.8:9999
+2020-02-17T11:39:21.361+00:00 [Info] KVSender::closeMutationStream MAINT_STREAM  Treating projector.topicMissing As Success
+2020-02-17T11:39:21.400+00:00 [Info] KVSender::sendShutdownTopic Projector 10.0.2.11:9999 Topic INIT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.402+00:00 [Error] KVSender::sendShutdownTopic Unexpected Error During Shutdown Projector 10.0.2.11:9999 Topic INIT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2. Err projector.topicMissing
+2020-02-17T11:39:21.402+00:00 [Error] KVSender::closeMutationStream INIT_STREAM  Error Received projector.topicMissing from 10.0.2.11:9999
+2020-02-17T11:39:21.402+00:00 [Info] KVSender::closeMutationStream INIT_STREAM  Treating projector.topicMissing As Success
+2020-02-17T11:39:21.402+00:00 [Info] KVSender::sendShutdownTopic Projector 10.0.2.13:9999 Topic INIT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.403+00:00 [Error] KVSender::sendShutdownTopic Unexpected Error During Shutdown Projector 10.0.2.13:9999 Topic INIT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2. Err projector.topicMissing
+2020-02-17T11:39:21.403+00:00 [Error] KVSender::closeMutationStream INIT_STREAM  Error Received projector.topicMissing from 10.0.2.13:9999
+2020-02-17T11:39:21.403+00:00 [Info] KVSender::closeMutationStream INIT_STREAM  Treating projector.topicMissing As Success
+2020-02-17T11:39:21.403+00:00 [Info] KVSender::sendShutdownTopic Projector 10.0.2.8:9999 Topic INIT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.403+00:00 [Error] KVSender::sendShutdownTopic Unexpected Error During Shutdown Projector 10.0.2.8:9999 Topic INIT_STREAM_TOPIC_3f1adf42289fac35f84a33ceb7f5d2d2. Err projector.topicMissing
+2020-02-17T11:39:21.403+00:00 [Error] KVSender::closeMutationStream INIT_STREAM  Error Received projector.topicMissing from 10.0.2.8:9999
+2020-02-17T11:39:21.403+00:00 [Info] KVSender::closeMutationStream INIT_STREAM  Treating projector.topicMissing As Success
+2020-02-17T11:39:21.403+00:00 [Info] ClustMgr:handleGetLocalValue Key RebalanceRunning
+2020-02-17T11:39:21.403+00:00 [Info] ClustMgr:handleGetLocalValue Key RebalanceToken
+2020-02-17T11:39:21.403+00:00 [Info] Indexer::recoverRebalanceState RebalanceRunning false RebalanceToken <nil>
+2020-02-17T11:39:21.403+00:00 [Info] ClustMgr:handleGetGlobalTopology &{map[]}
+2020-02-17T11:39:21.403+00:00 [Info] Indexer::initFromPersistedState Recovered IndexInstMap 
+2020-02-17T11:39:21.417+00:00 [Info] indexer.upgradeStorage: check index for storage upgrade.   disable false overrride not_set
+2020-02-17T11:39:21.417+00:00 [Info] DDLServiceMgr: intialized. Local nodeUUID 3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.417+00:00 [Info] RebalanceMgr::NewRebalanceMgr false <nil> 
+2020-02-17T11:39:21.418+00:00 [Info] RebalanceMgr::initService Init
+2020-02-17T11:39:21.418+00:00 [Info] ServiceMgr::registerWithServer nodeuuid 3f1adf42289fac35f84a33ceb7f5d2d2 
+2020-02-17T11:39:21.418+00:00 [Error] ServiceMgr::getGlobalTopology Error gathering global topology 127.0.0.1:9102/getIndexMetadata Unable to find given hostport in cbauth database: `127.0.0.1:9102'
+2020-02-17T11:39:21.418+00:00 [Error] ServiceMgr::updateNodeList Error Fetching Topology Unable to find given hostport in cbauth database: `127.0.0.1:9102'
+2020-02-17T11:39:21.419+00:00 [Info] Indexer::local storage mode plasma
+2020-02-17T11:39:21.423+00:00 [Warn] Encountered error while reading persisted stats. Skipping read. Error: open /opt/couchbase/var/lib/couchbase/data/@2i/indexstats/stats: no such file or directory
+2020-02-17T11:39:21.423+00:00 [Info] MutationMgr::handleUpdateIndexInstMap 
+	Message: MsgUpdateInstMap
+2020-02-17T11:39:21.425+00:00 [Info] MutationMgr::handleUpdateIndexPartnMap 
+	Message: MsgUpdatePartnMap
+2020-02-17T11:39:21.425+00:00 [Info] ClustMgr:handleIndexMap 
+	Message: MsgUpdateInstMap
+2020-02-17T11:39:21.425+00:00 [Info] ClustMgr:handleIndexerReady &{60 [] {false false false false false false false}  0 false <nil>}
+2020-02-17T11:39:21.425+00:00 [Info] SettingsMgr::handleIndexerReady apply pending setting changes
+2020-02-17T11:39:21.426+00:00 [Info] ClustMgr:handleSetLocalValue Key IndexerNodeUUID Value 3f1adf42289fac35f84a33ceb7f5d2d2
+2020-02-17T11:39:21.427+00:00 [Info] ServiceMgr::listenMoveIndex &{3f1adf42289fac35f84a33ceb7f5d2d2 4 <nil>}
+2020-02-17T11:39:21.430+00:00 [Info] Indexer::NewIndexer Status Active
+2020-02-17T11:39:21.430+00:00 [Info] 127.0.0.1:8091 starting RESTful services
+2020-02-17T11:39:21.430+00:00 [Info] Indexer::monitorMemUsage started...
+2020-02-17T11:39:21.430+00:00 [Info] memstats {"Alloc":0, "TotalAlloc":0, "Sys":0, "Lookups":0, "Mallocs":0,"Frees":0, "HeapAlloc":0, "HeapSys":0, "HeapIdle":0, "HeapInuse":0,"HeapReleased":0, "HeapObjects":0,"GCSys":0, "LastGC":0,"PauseTotalNs":0, "PauseNs":[], "NumGC":0}
+2020-02-17T11:39:21.430+00:00 [Info] progress stats collection done.
+2020-02-17T11:39:21.430+00:00 [Info] send progress stats to clients
+2020-02-17T11:39:21.432+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:39:21.433+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 0] []}
+2020-02-17T11:39:21.437+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:39:21.437+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 0] [3f1adf42289fac35f84a33ceb7f5d2d2] true []}
+2020-02-17T11:39:21.442+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 0]
+2020-02-17T11:39:21.442+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 0]
+2020-02-17T11:39:21.444+00:00 [Info] New settings received: 
+{"indexer.settings.compaction.days_of_week":"Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday","indexer.settings.compaction.interval":"00:00,00:00","indexer.settings.compaction.compaction_mode":"circular","indexer.settings.log_level":"info","indexer.settings.persisted_snapshot.interval":5000,"indexer.settings.compaction.min_frag":30,"indexer.settings.inmemory_snapshot.interval":200,"indexer.settings.max_cpu_percent":0,"indexer.settings.storage_mode":"plasma","indexer.settings.recovery.max_rollbacks":2,"indexer.settings.memory_quota":268435456,"indexer.settings.compaction.abort_exceed_interval":false}
+2020-02-17T11:39:21.444+00:00 [Info] Setting maxcpus = 4
+2020-02-17T11:39:21.444+00:00 [Info] Setting log level to Info
+2020-02-17T11:39:21.466+00:00 [Info] Indexer::updateStorageMode Try setting storage mode to plasma
+2020-02-17T11:39:21.466+00:00 [Info] Indexer: Setting GC percent to 100
+2020-02-17T11:39:21.501+00:00 [Info] CompactionManager: Refreshing settings
+2020-02-17T11:39:21.501+00:00 [Info] MutationMgr::MaxQueueMemoryQuota 26843545
+2020-02-17T11:39:21.501+00:00 [Info] ClustMgr:handleConfigUpdate
+2020-02-17T11:39:21.509+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T11:39:21.510+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_CONFIG_UPDATE elapsed 2.6389ms len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:39:22.223+00:00 [Info] ServiceMgr::PrepareTopologyChange {4b5f504e917bba6b0b5b790be97d93d7 [] topology-change-rebalance [{{e2a2c7da05001b61d5128ac80c037dc5 4 <nil>} recovery-full} {{3f1adf42289fac35f84a33ceb7f5d2d2 4 <nil>} recovery-full} {{c17ce99f3cb0cec8038043e30471d33f 4 <nil>} recovery-full}] []}
+2020-02-17T11:39:22.230+00:00 [Info] ServiceMgr::prepareRebalance Found DDL Running []
+2020-02-17T11:39:22.230+00:00 [Info] ServiceMgr::prepareRebalance Init Prepare Phase
+2020-02-17T11:39:22.230+00:00 [Info] ClustMgr:handleSetLocalValue Key RebalanceRunning Value 
+2020-02-17T11:39:22.233+00:00 [Info] ClustMgr:handleRebalanceRunning &{61 [] {false false false false false false false}  0 false <nil>}
+2020-02-17T11:39:22.234+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 1] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:39:22.234+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_REBALANCE_RUNNING elapsed 3.7µs len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:39:22.234+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 1] [{[0 0 0 0 0 0 0 0] prepare/4b5f504e917bba6b0b5b790be97d93d7 task-prepared task-running true 0 map[]   map[rebalanceId:4b5f504e917bba6b0b5b790be97d93d7]}]}
+2020-02-17T11:39:22.239+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 1]
+2020-02-17T11:39:22.240+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 1]
+2020-02-17T11:39:22.255+00:00 [Info] serviceChangeNotifier: received ServiceChangeNotification
+2020-02-17T11:39:22.294+00:00 [Info] Indexer::ReadMemstats Time Taken 278.8µs
+2020-02-17T11:39:22.339+00:00 [Info] ServiceMgr::handleRegisterRebalanceToken New Rebalance Token {c17ce99f3cb0cec8038043e30471d33f 4b5f504e917bba6b0b5b790be97d93d7 Rebalance  10.0.2.8}
+2020-02-17T11:39:22.344+00:00 [Info] ServiceMgr::observeGlobalRebalanceToken Global And Local Rebalance Token Match {c17ce99f3cb0cec8038043e30471d33f 4b5f504e917bba6b0b5b790be97d93d7 Rebalance  10.0.2.8}
+2020-02-17T11:39:22.344+00:00 [Info] ClustMgr:handleSetLocalValue Key RebalanceToken Value {"MasterId":"c17ce99f3cb0cec8038043e30471d33f","RebalId":"4b5f504e917bba6b0b5b790be97d93d7","Source":0,"Error":"","MasterIP":"10.0.2.8"}
+2020-02-17T11:39:22.368+00:00 [Info] ServiceMgr::registerLocalRebalanceToken Registered Rebalance Token In Local Meta &{c17ce99f3cb0cec8038043e30471d33f 4b5f504e917bba6b0b5b790be97d93d7 Rebalance  10.0.2.8}
+2020-02-17T11:39:22.368+00:00 [Info] NewRebalancer nodeId 3f1adf42289fac35f84a33ceb7f5d2d2 rebalToken &{c17ce99f3cb0cec8038043e30471d33f 4b5f504e917bba6b0b5b790be97d93d7 Rebalance  10.0.2.8} master false localaddr 127.0.0.1:9102 runPlanner false runParam &{false []}
+2020-02-17T11:39:22.369+00:00 [Info] Rebalancer::observeRebalance &{c17ce99f3cb0cec8038043e30471d33f 4b5f504e917bba6b0b5b790be97d93d7 Rebalance  10.0.2.8} master:false
+2020-02-17T11:39:22.372+00:00 [Info] Rebalancer::processTokens RebalanceToken /indexing/rebalance/RebalanceToken [123 34 77 97 115 116 101 114 73 100 34 58 34 99 49 55 99 101 57 57 102 51 99 98 48 99 101 99 56 48 51 56 48 52 51 101 51 48 52 55 49 100 51 51 102 34 44 34 82 101 98 97 108 73 100 34 58 34 52 98 53 102 53 48 52 101 57 49 55 98 98 97 54 98 48 98 53 98 55 57 48 98 101 57 55 100 57 51 100 55 34 44 34 83 111 117 114 99 101 34 58 48 44 34 69 114 114 111 114 34 58 34 34 44 34 77 97 115 116 101 114 73 80 34 58 34 49 48 46 48 46 50 46 56 34 125]
+2020-02-17T11:39:22.435+00:00 [Info] DDLServiceMgr::handleListCreateTokens Processing Request &{GET /listCreateTokens HTTP/1.1 1 1 map[User-Agent:[Go-http-client/1.1] Authorization:[Basic QGluZGV4LWNiYXV0aDo1YjViOWQxYzU5ZmU4YzExN2M5ZTlhOGE3OGVkNGZlZQ==] Accept-Encoding:[gzip]] 0x1b0ff70 0 [] false 10.0.2.13:9102 map[] map[] <nil> map[] 10.0.2.8:38522 /listCreateTokens <nil> <nil> <nil> 0xc4236a4b40}
+2020-02-17T11:39:22.453+00:00 [Info] DDLServiceMgr::handleListDeleteTokens Processing Request &{GET /listDeleteTokens HTTP/1.1 1 1 map[User-Agent:[Go-http-client/1.1] Authorization:[Basic QGluZGV4LWNiYXV0aDo1YjViOWQxYzU5ZmU4YzExN2M5ZTlhOGE3OGVkNGZlZQ==] Accept-Encoding:[gzip]] 0x1b0ff70 0 [] false 10.0.2.13:9102 map[] map[] <nil> map[] 10.0.2.8:38522 /listDeleteTokens <nil> <nil> <nil> 0xc4236d8d80}
+2020-02-17T11:39:22.467+00:00 [Info] DDLServiceMgr::handleListDropInstanceTokens Processing Request &{GET /listDropInstanceTokens HTTP/1.1 1 1 map[User-Agent:[Go-http-client/1.1] Authorization:[Basic QGluZGV4LWNiYXV0aDo1YjViOWQxYzU5ZmU4YzExN2M5ZTlhOGE3OGVkNGZlZQ==] Accept-Encoding:[gzip]] 0x1b0ff70 0 [] false 10.0.2.13:9102 map[] map[] <nil> map[] 10.0.2.8:38522 /listDropInstanceTokens <nil> <nil> <nil> 0xc4236d9000}
+2020-02-17T11:39:22.515+00:00 [Info] Rebalancer::processTokens RebalanceToken /indexing/rebalance/RebalanceToken []
+2020-02-17T11:39:22.515+00:00 [Info] Rebalancer::processTokens Rebalance Token Deleted. Mark Done.
+2020-02-17T11:39:22.515+00:00 [Info] Rebalancer::doFinish Cleanup <nil>
+2020-02-17T11:39:22.515+00:00 [Info] ServiceMgr::onRebalanceDoneLOCKED Rebalance Done <nil>
+2020-02-17T11:39:22.515+00:00 [Info] ServiceMgr::runCleanupPhase path /indexing/rebalance/RebalanceToken isMaster false
+2020-02-17T11:39:22.515+00:00 [Info] Rebalancer::processDropIndexQueue Done Received
+2020-02-17T11:39:22.528+00:00 [Info] ServiceMgr::cleanupLocalRToken Cleanup
+2020-02-17T11:39:22.528+00:00 [Info] ClustMgr:handleDelLocalValue Key RebalanceToken
+2020-02-17T11:39:22.530+00:00 [Info] ServiceMgr::cleanupRebalanceRunning Cleanup
+2020-02-17T11:39:22.530+00:00 [Info] ClustMgr:handleDelLocalValue Key RebalanceRunning
+2020-02-17T11:39:22.533+00:00 [Info] Rebalancer::observeRebalance exiting err <nil>
+2020-02-17T11:39:22.541+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:39:22.541+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 1] [{[0 0 0 0 0 0 0 0] prepare/4b5f504e917bba6b0b5b790be97d93d7 task-prepared task-running true 0 map[]   map[rebalanceId:4b5f504e917bba6b0b5b790be97d93d7]}]}
+2020-02-17T11:39:22.543+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:39:22.543+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 1] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:39:22.545+00:00 [Info] ServiceMgr::CancelTask prepare/4b5f504e917bba6b0b5b790be97d93d7 []
+2020-02-17T11:39:22.545+00:00 [Info] ServiceMgr::cleanupRebalanceRunning Cleanup
+2020-02-17T11:39:22.545+00:00 [Info] ClustMgr:handleDelLocalValue Key RebalanceRunning
+2020-02-17T11:39:22.547+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:39:22.547+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:39:22.550+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:39:22.550+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:39:22.560+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:39:22.560+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:39:22.563+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:39:22.565+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:39:22.626+00:00 [Info] serviceChangeNotifier: received ServiceChangeNotification
+2020-02-17T11:39:22.707+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_SERVICE_MAP elapsed 17.637901ms len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:39:22.774+00:00 [Error] PeerPipe.doRecieve() : ecounter error when received mesasage from Peer 10.0.2.8:60538.  Error = EOF. Kill Pipe.
+2020-02-17T11:39:22.776+00:00 [Info] messageListener.start(): message channel closed. Remove peer 61:88:9c:92:b1:8a:12:45 as follower.
+2020-02-17T11:39:22.937+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:39:23.207+00:00 [Info] Fetch new stats upon request by life cycle manager
+2020-02-17T11:39:51.427+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:39:52.564+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:39:52.564+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:39:52.565+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:39:52.565+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:39:52.565+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:39:52.566+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:40:21.293+00:00 [Info] PeriodicStats = {"cpu_utilization":0.8333055564814507,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":165019648,"memory_quota":268435456,"memory_rss":31039488,"memory_total":2085535744,"memory_total_storage":5103616,"memory_used":63846400,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":0,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581939621292829411","timings/stats_response":"96 10296500 3273293190000","uptime":"1m0.349784734s"}
+2020-02-17T11:40:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:40:21.426+00:00 [Info] builder: recovering scheduled index
+2020-02-17T11:40:21.430+00:00 [Info] memstats {"Alloc":55308808, "TotalAlloc":57340944, "Sys":64170232, "Lookups":55, "Mallocs":38538,"Frees":22730, "HeapAlloc":55308808, "HeapSys":58064896, "HeapIdle":1572864, "HeapInuse":56492032,"HeapReleased":0, "HeapObjects":15808,"GCSys":2074624, "LastGC":1581939561500982815,"PauseTotalNs":51612205, "PauseNs":[9912002, 6564801, 416300, 34719102], "NumGC":4}
+2020-02-17T11:40:21.430+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:40:22.565+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:40:22.565+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:40:22.566+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:40:22.566+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:40:22.566+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:40:22.567+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:40:24.293+00:00 [Info] Indexer::ReadMemstats Time Taken 129.9µs
+2020-02-17T11:40:51.432+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:40:52.566+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:40:52.566+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:40:52.567+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:40:52.567+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:40:52.567+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:40:52.572+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:41:21.293+00:00 [Info] PeriodicStats = {"cpu_utilization":0.6,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":140054528,"memory_quota":268435456,"memory_rss":33456128,"memory_total":2085535744,"memory_total_storage":5484544,"memory_used":68290560,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":0,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581939681293415811","timings/stats_response":"192 22777500 10219550370000","uptime":"2m0.350365334s"}
+2020-02-17T11:41:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:41:21.430+00:00 [Info] memstats {"Alloc":59447720, "TotalAlloc":61479856, "Sys":67414264, "Lookups":275, "Mallocs":99973,"Frees":29675, "HeapAlloc":59447720, "HeapSys":61112320, "HeapIdle":655360, "HeapInuse":60456960,"HeapReleased":0, "HeapObjects":70298,"GCSys":2172928, "LastGC":1581939561500982815,"PauseTotalNs":51612205, "PauseNs":[], "NumGC":4}
+2020-02-17T11:41:21.436+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:41:22.567+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:41:22.568+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:41:22.568+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:41:22.572+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:41:22.572+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:41:22.573+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:41:26.294+00:00 [Info] Indexer::ReadMemstats Time Taken 375.2µs
+2020-02-17T11:41:51.439+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:41:52.569+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:41:52.569+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:41:52.570+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:41:52.573+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:41:52.573+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:41:52.575+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:42:21.293+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":127430656,"memory_quota":268435456,"memory_rss":34299904,"memory_total":2085535744,"memory_total_storage":5484544,"memory_used":65382400,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":0,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581939741293793303","timings/stats_response":"288 32789199 16566417933201","uptime":"3m0.350752326s"}
+2020-02-17T11:42:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:42:21.431+00:00 [Info] memstats {"Alloc":56043904, "TotalAlloc":64119000, "Sys":68499704, "Lookups":471, "Mallocs":146262,"Frees":116229, "HeapAlloc":56043904, "HeapSys":62259200, "HeapIdle":4743168, "HeapInuse":57516032,"HeapReleased":0, "HeapObjects":30033,"GCSys":2205696, "LastGC":1581939657773999241,"PauseTotalNs":52272805, "PauseNs":[660600], "NumGC":5}
+2020-02-17T11:42:21.442+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:42:22.570+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:42:22.570+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:42:22.571+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:42:22.575+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:42:22.575+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:42:22.576+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:42:29.294+00:00 [Info] Indexer::ReadMemstats Time Taken 232.5µs
+2020-02-17T11:42:51.445+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:42:52.571+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:42:52.571+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:42:52.572+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:42:52.576+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:42:52.576+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:42:52.577+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:43:21.294+00:00 [Info] PeriodicStats = {"cpu_utilization":0.7666666666666666,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":109969408,"memory_quota":268435456,"memory_rss":35037184,"memory_total":2085535744,"memory_total_storage":5484544,"memory_used":67577856,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":0,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581939801294218284","timings/stats_response":"384 41731596 17964909639004","uptime":"4m0.351169507s"}
+2020-02-17T11:43:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:43:21.431+00:00 [Info] memstats {"Alloc":58784392, "TotalAlloc":66859488, "Sys":68499704, "Lookups":679, "Mallocs":194507,"Frees":120094, "HeapAlloc":58784392, "HeapSys":62259200, "HeapIdle":2547712, "HeapInuse":59711488,"HeapReleased":0, "HeapObjects":74413,"GCSys":2205696, "LastGC":1581939657773999241,"PauseTotalNs":52272805, "PauseNs":[], "NumGC":5}
+2020-02-17T11:43:21.447+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:43:22.572+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:43:22.572+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:43:22.573+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:43:22.577+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:43:22.578+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:43:22.579+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:43:32.293+00:00 [Info] Indexer::ReadMemstats Time Taken 246.7µs
+2020-02-17T11:43:44.131+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:43:44.199+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:43:44.586+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:43:45.000+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:43:45.525+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:43:47.543+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:43:51.304+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:43:51.449+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:43:52.089+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:43:52.573+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:43:52.573+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:43:52.574+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:43:52.579+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:43:52.579+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:43:52.580+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:44:11.992+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_SERVICE_MAP elapsed 36.293943ms len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:44:12.036+00:00 [Info] [Queryport ":9101"] connection "10.0.2.8:45350" doReceive() ...
+2020-02-17T11:44:12.492+00:00 [Info] Fetch new stats upon request by life cycle manager
+2020-02-17T11:44:21.294+00:00 [Info] PeriodicStats = {"cpu_utilization":0.8,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":103317504,"memory_quota":268435456,"memory_rss":42389504,"memory_total":2085535744,"memory_total_storage":5615616,"memory_used":65603584,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581939861294627064","timings/stats_response":"480 52566597 27646442017205","uptime":"5m0.351571187s"}
+2020-02-17T11:44:21.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T11:44:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:44:21.432+00:00 [Info] memstats {"Alloc":56301168, "TotalAlloc":69505056, "Sys":68499704, "Lookups":872, "Mallocs":241153,"Frees":206628, "HeapAlloc":56301168, "HeapSys":62291968, "HeapIdle":4685824, "HeapInuse":57606144,"HeapReleased":0, "HeapObjects":34525,"GCSys":2205696, "LastGC":1581939777846808037,"PauseTotalNs":52875805, "PauseNs":[603000], "NumGC":6}
+2020-02-17T11:44:21.451+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:44:21.457+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T11:44:22.574+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:44:22.574+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:44:22.575+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:44:22.580+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:44:22.580+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:44:22.581+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:44:23.708+00:00 [Info] LifecycleMgr.handlePrepareCreateIndex() : Accept 11998205180710471750
+2020-02-17T11:44:23.708+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_PREPARE_CREATE_INDEX elapsed 870.1µs len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:44:23.774+00:00 [Info] DDLServiceMgr::handleListCreateTokens Processing Request &{GET /listCreateTokens HTTP/1.1 1 1 map[User-Agent:[Go-http-client/1.1] Authorization:[Basic QGNicS1lbmdpbmUtY2JhdXRoOjViNWI5ZDFjNTlmZThjMTE3YzllOWE4YTc4ZWQ0ZmVl] Accept-Encoding:[gzip]] 0x1b0ff70 0 [] false 10.0.2.13:9102 map[] map[] <nil> map[] 10.0.2.8:38816 /listCreateTokens <nil> <nil> <nil> 0xc4243874c0}
+2020-02-17T11:44:23.806+00:00 [Info] DDLServiceMgr::handleListDeleteTokens Processing Request &{GET /listDeleteTokens HTTP/1.1 1 1 map[User-Agent:[Go-http-client/1.1] Authorization:[Basic QGNicS1lbmdpbmUtY2JhdXRoOjViNWI5ZDFjNTlmZThjMTE3YzllOWE4YTc4ZWQ0ZmVl] Accept-Encoding:[gzip]] 0x1b0ff70 0 [] false 10.0.2.13:9102 map[] map[] <nil> map[] 10.0.2.8:38816 /listDeleteTokens <nil> <nil> <nil> 0xc424387680}
+2020-02-17T11:44:23.835+00:00 [Info] DDLServiceMgr::handleListDropInstanceTokens Processing Request &{GET /listDropInstanceTokens HTTP/1.1 1 1 map[User-Agent:[Go-http-client/1.1] Authorization:[Basic QGNicS1lbmdpbmUtY2JhdXRoOjViNWI5ZDFjNTlmZThjMTE3YzllOWE4YTc4ZWQ0ZmVl] Accept-Encoding:[gzip]] 0x1b0ff70 0 [] false 10.0.2.13:9102 map[] map[] <nil> map[] 10.0.2.8:38816 /listDropInstanceTokens <nil> <nil> <nil> 0xc42431b6c0}
+2020-02-17T11:44:24.949+00:00 [Info] LifecycleMgr.handleCommitCreateIndex() : Create token posted for 11998205180710471750
+2020-02-17T11:44:24.949+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_COMMIT_CREATE_INDEX elapsed 227.6µs len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:44:25.436+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_SERVICE_MAP elapsed 26.978402ms len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:44:25.465+00:00 [Info] DDLServiceMgr: connecting to node 10.0.2.11:9100
+2020-02-17T11:44:25.465+00:00 [Info] MetadataProvider.WatchMetadata(): indexer 10.0.2.11:9100
+2020-02-17T11:44:25.499+00:00 [Info] LifecycleMgr.updateIndexReplicaCount() : Index Definition does not exist for 11998205180710471750.  No update is performed.
+2020-02-17T11:44:25.499+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_UPDATE_REPLICA_COUNT elapsed 96.9µs len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:44:25.505+00:00 [Error] PeerPipe.doRecieve() : ecounter error when received mesasage from Peer 10.0.2.11:32856.  Error = EOF. Kill Pipe.
+2020-02-17T11:44:25.505+00:00 [Info] messageListener.start(): message channel closed. Remove peer ae:24:8f:e:50:25:b:84 as follower.
+2020-02-17T11:44:25.534+00:00 [Info] WatchMetadata(): successfully reach indexer at 10.0.2.11:9100.
+2020-02-17T11:44:25.534+00:00 [Info] DDLServiceMgr: connecting to node 10.0.2.13:9100
+2020-02-17T11:44:25.534+00:00 [Info] MetadataProvider.WatchMetadata(): indexer 10.0.2.13:9100
+2020-02-17T11:44:25.577+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_SERVICE_MAP elapsed 41.701101ms len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:44:25.577+00:00 [Info] WatchMetadata(): successfully reach indexer at 10.0.2.13:9100.
+2020-02-17T11:44:25.577+00:00 [Info] DDLServiceMgr: connecting to node 10.0.2.8:9100
+2020-02-17T11:44:25.577+00:00 [Info] MetadataProvider.WatchMetadata(): indexer 10.0.2.8:9100
+2020-02-17T11:44:25.621+00:00 [Info] WatchMetadata(): successfully reach indexer at 10.0.2.8:9100.
+2020-02-17T11:44:25.621+00:00 [Info] MetadataProvider.CheckIndexerStatus(): adminport=10.0.2.11:9100 connected=true
+2020-02-17T11:44:25.621+00:00 [Info] MetadataProvider.CheckIndexerStatus(): adminport=10.0.2.13:9100 connected=true
+2020-02-17T11:44:25.621+00:00 [Info] MetadataProvider.CheckIndexerStatus(): adminport=10.0.2.8:9100 connected=true
+2020-02-17T11:44:25.621+00:00 [Info] MetadataProvider is terminated. Cleaning up ...
+2020-02-17T11:44:25.621+00:00 [Info] Unwatching metadata for indexer at 10.0.2.11:9100.
+2020-02-17T11:44:25.621+00:00 [Info] Unwatching metadata for indexer at 10.0.2.13:9100.
+2020-02-17T11:44:25.621+00:00 [Info] Unwatching metadata for indexer at 10.0.2.8:9100.
+2020-02-17T11:44:25.621+00:00 [Error] PeerPipe.doRecieve() : ecounter error when received mesasage from Peer 10.0.2.13:9100.  Error = read tcp 10.0.2.13:53622->10.0.2.13:9100: use of closed network connection. Kill Pipe.
+2020-02-17T11:44:25.621+00:00 [Error] PeerPipe.doRecieve() : ecounter error when received mesasage from Peer 10.0.2.8:9100.  Error = read tcp 10.0.2.13:49464->10.0.2.8:9100: use of closed network connection. Kill Pipe.
+2020-02-17T11:44:25.622+00:00 [Error] PeerPipe.doRecieve() : ecounter error when received mesasage from Peer 10.0.2.11:9100.  Error = read tcp 10.0.2.13:58572->10.0.2.11:9100: use of closed network connection. Kill Pipe.
+2020-02-17T11:44:25.621+00:00 [Error] PeerPipe.doRecieve() : ecounter error when received mesasage from Peer 10.0.2.13:53622.  Error = EOF. Kill Pipe.
+2020-02-17T11:44:25.623+00:00 [Info] messageListener.start(): message channel closed. Remove peer 35:70:5f:c2:fd:a2:bb:b1 as follower.
+2020-02-17T11:44:25.937+00:00 [Info] Fetch new stats upon request by life cycle manager
+2020-02-17T11:44:26.077+00:00 [Info] Fetch new stats upon request by life cycle manager
+2020-02-17T11:44:26.195+00:00 [Info] lifecycleMgr.dispatchRequest: op OPCODE_SERVICE_MAP elapsed 19.603401ms len(expediates) 0 len(incomings) 0 len(outgoings) 0
+2020-02-17T11:44:26.196+00:00 [Error] PeerPipe.doRecieve() : ecounter error when received mesasage from Peer 10.0.2.8:60836.  Error = EOF. Kill Pipe.
+2020-02-17T11:44:26.196+00:00 [Info] messageListener.start(): message channel closed. Remove peer 41:7c:7a:3b:3f:a0:41:e8 as follower.
+2020-02-17T11:44:26.695+00:00 [Info] Fetch new stats upon request by life cycle manager
+2020-02-17T11:44:28.063+00:00 [Info] serviceChangeNotifier: received PoolChangeNotification
+2020-02-17T11:44:35.294+00:00 [Info] Indexer::ReadMemstats Time Taken 334.6µs
+2020-02-17T11:44:51.453+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:44:52.575+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:44:52.575+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:44:52.577+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:44:52.582+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:44:52.582+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:44:52.584+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:45:21.295+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":100798464,"memory_quota":268435456,"memory_rss":43167744,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":86403072,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581939921295079167","timings/stats_response":"577 65758398 46066580968406","uptime":"6m0.35202909s"}
+2020-02-17T11:45:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:45:21.432+00:00 [Info] memstats {"Alloc":76335024, "TotalAlloc":89538912, "Sys":84797688, "Lookups":1097, "Mallocs":574374,"Frees":324243, "HeapAlloc":76335024, "HeapSys":77889536, "HeapIdle":172032, "HeapInuse":77717504,"HeapReleased":0, "HeapObjects":250131,"GCSys":2762752, "LastGC":1581939777846808037,"PauseTotalNs":52875805, "PauseNs":[], "NumGC":6}
+2020-02-17T11:45:21.455+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:45:22.577+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:45:22.577+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:45:22.578+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:45:22.584+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:45:22.584+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:45:22.586+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:45:38.294+00:00 [Info] Indexer::ReadMemstats Time Taken 263.9µs
+2020-02-17T11:45:51.458+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:45:52.579+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:45:52.579+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:45:52.580+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:45:52.587+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:45:52.587+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:45:52.588+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:46:21.295+00:00 [Info] PeriodicStats = {"cpu_utilization":0.46666666666666673,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":90324992,"memory_quota":268435456,"memory_rss":42659840,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69609472,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581939981295397563","timings/stats_response":"673 74844597 50184984498607","uptime":"7m0.352345586s"}
+2020-02-17T11:46:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:46:21.433+00:00 [Info] memstats {"Alloc":58652536, "TotalAlloc":93802704, "Sys":86964472, "Lookups":1305, "Mallocs":646670,"Frees":585221, "HeapAlloc":58652536, "HeapSys":80019456, "HeapIdle":19161088, "HeapInuse":60858368,"HeapReleased":0, "HeapObjects":61449,"GCSys":2828288, "LastGC":1581939897910352696,"PauseTotalNs":53262105, "PauseNs":[386300], "NumGC":7}
+2020-02-17T11:46:21.460+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:46:22.580+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:46:22.580+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:46:22.581+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:46:22.589+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:46:22.589+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:46:22.590+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:46:42.294+00:00 [Info] Indexer::ReadMemstats Time Taken 442.9µs
+2020-02-17T11:46:51.463+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:46:52.581+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:46:52.581+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:46:52.582+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:46:52.591+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:46:52.591+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:46:52.592+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:47:21.295+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":125751296,"memory_quota":268435456,"memory_rss":42221568,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":72804352,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940041295724488","timings/stats_response":"769 83017798 52965179948008","uptime":"8m0.352675011s"}
+2020-02-17T11:47:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:47:21.433+00:00 [Info] memstats {"Alloc":62720368, "TotalAlloc":97870536, "Sys":86964472, "Lookups":1500, "Mallocs":716371,"Frees":594806, "HeapAlloc":62720368, "HeapSys":80084992, "HeapIdle":16031744, "HeapInuse":64053248,"HeapReleased":0, "HeapObjects":121565,"GCSys":2828288, "LastGC":1581939897910352696,"PauseTotalNs":53262105, "PauseNs":[], "NumGC":7}
+2020-02-17T11:47:21.466+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:47:22.582+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:47:22.582+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:47:22.583+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:47:22.592+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:47:22.592+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:47:22.593+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:47:46.294+00:00 [Info] Indexer::ReadMemstats Time Taken 155.7µs
+2020-02-17T11:47:51.469+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:47:52.583+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:47:52.583+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:47:52.584+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:47:52.594+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:47:52.594+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:47:52.595+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:48:21.296+00:00 [Info] PeriodicStats = {"cpu_utilization":0.46666666666666673,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":113393664,"memory_quota":268435456,"memory_rss":42221568,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69666816,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940101296106161","timings/stats_response":"865 91107898 54379947938008","uptime":"9m0.353057884s"}
+2020-02-17T11:48:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:48:21.433+00:00 [Info] memstats {"Alloc":58937000, "TotalAlloc":102118064, "Sys":86964472, "Lookups":1708, "Mallocs":788425,"Frees":722017, "HeapAlloc":58937000, "HeapSys":80117760, "HeapIdle":19202048, "HeapInuse":60915712,"HeapReleased":0, "HeapObjects":66408,"GCSys":2828288, "LastGC":1581940018034573489,"PauseTotalNs":53642505, "PauseNs":[380400], "NumGC":8}
+2020-02-17T11:48:21.472+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:48:22.585+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:48:22.585+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:48:22.586+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:48:22.595+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:48:22.595+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:48:22.596+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:48:50.294+00:00 [Info] Indexer::ReadMemstats Time Taken 228.8µs
+2020-02-17T11:48:51.474+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:48:52.586+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:48:52.586+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:48:52.587+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:48:52.596+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:48:52.596+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:48:52.598+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:49:21.296+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":94773248,"memory_quota":268435456,"memory_rss":42221568,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":73197568,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940161296449315","timings/stats_response":"961 98055298 54965354998008","uptime":"10m0.353400438s"}
+2020-02-17T11:49:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:49:21.434+00:00 [Info] memstats {"Alloc":63184464, "TotalAlloc":106365528, "Sys":86964472, "Lookups":1916, "Mallocs":860833,"Frees":731738, "HeapAlloc":63184464, "HeapSys":80117760, "HeapIdle":15671296, "HeapInuse":64446464,"HeapReleased":0, "HeapObjects":129095,"GCSys":2828288, "LastGC":1581940018034573489,"PauseTotalNs":53642505, "PauseNs":[], "NumGC":8}
+2020-02-17T11:49:21.476+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:49:22.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T11:49:22.587+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:49:22.587+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:49:22.588+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:49:22.598+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:49:22.598+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:49:22.599+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:49:50.294+00:00 [Info] Indexer::ReadMemstats Time Taken 154.6µs
+2020-02-17T11:49:51.479+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:49:52.588+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:49:52.588+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:49:52.589+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:49:52.599+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:49:52.599+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:49:52.600+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:50:21.296+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":119660544,"memory_quota":268435456,"memory_rss":40763392,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70690816,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940221296854323","timings/stats_response":"1057 105954898 56489554498008","uptime":"11m0.353801046s"}
+2020-02-17T11:50:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:50:21.434+00:00 [Info] memstats {"Alloc":60415248, "TotalAlloc":111582544, "Sys":86964472, "Lookups":2108, "Mallocs":951859,"Frees":867841, "HeapAlloc":60415248, "HeapSys":80052224, "HeapIdle":18112512, "HeapInuse":61939712,"HeapReleased":0, "HeapObjects":84018,"GCSys":2828288, "LastGC":1581940138234848166,"PauseTotalNs":54690105, "PauseNs":[1047600], "NumGC":9}
+2020-02-17T11:50:21.451+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T11:50:21.481+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:50:22.589+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:50:22.589+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:50:22.591+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:50:22.600+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:50:22.600+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:50:22.602+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:50:51.484+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:50:52.591+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:50:52.591+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:50:52.592+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:50:52.602+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:50:52.602+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:50:52.603+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:50:53.293+00:00 [Info] Indexer::ReadMemstats Time Taken 174.3µs
+2020-02-17T11:51:21.297+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":109838336,"memory_quota":268435456,"memory_rss":40763392,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":74500096,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940281297335568","timings/stats_response":"1153 114407898 59314701998008","uptime":"12m0.354289791s"}
+2020-02-17T11:51:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:51:21.435+00:00 [Info] memstats {"Alloc":64495392, "TotalAlloc":115662688, "Sys":86964472, "Lookups":2300, "Mallocs":1021684,"Frees":877448, "HeapAlloc":64495392, "HeapSys":80052224, "HeapIdle":14303232, "HeapInuse":65748992,"HeapReleased":0, "HeapObjects":144236,"GCSys":2828288, "LastGC":1581940138234848166,"PauseTotalNs":54690105, "PauseNs":[], "NumGC":9}
+2020-02-17T11:51:21.486+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:51:22.593+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:51:22.593+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:51:22.593+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:51:22.603+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:51:22.603+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:51:22.606+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:51:51.488+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:51:52.594+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:51:52.594+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:51:52.595+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:51:52.606+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:51:52.606+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:51:52.607+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:51:55.294+00:00 [Info] Indexer::ReadMemstats Time Taken 230.5µs
+2020-02-17T11:52:21.297+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":123494400,"memory_quota":268435456,"memory_rss":37023744,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69830656,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940341297715098","timings/stats_response":"1249 122122698 60600755258008","uptime":"13m0.354664021s"}
+2020-02-17T11:52:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:52:21.435+00:00 [Info] memstats {"Alloc":59486200, "TotalAlloc":119875776, "Sys":86964472, "Lookups":2508, "Mallocs":1093092,"Frees":1018425, "HeapAlloc":59486200, "HeapSys":80084992, "HeapIdle":19005440, "HeapInuse":61079552,"HeapReleased":4628480, "HeapObjects":74667,"GCSys":2828288, "LastGC":1581940258308701677,"PauseTotalNs":55086405, "PauseNs":[396300], "NumGC":10}
+2020-02-17T11:52:21.490+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:52:22.596+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:52:22.596+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:52:22.596+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:52:22.607+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:52:22.607+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:52:22.608+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:52:51.492+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:52:52.597+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:52:52.597+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:52:52.598+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:52:52.608+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:52:52.608+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:52:52.610+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:52:57.294+00:00 [Info] Indexer::ReadMemstats Time Taken 351.8µs
+2020-02-17T11:53:21.298+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5666666666666667,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":119406592,"memory_quota":268435456,"memory_rss":37023744,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":73304064,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940401298167438","timings/stats_response":"1345 130207397 62049523405809","uptime":"14m0.355115761s"}
+2020-02-17T11:53:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:53:21.435+00:00 [Info] memstats {"Alloc":63494528, "TotalAlloc":123884104, "Sys":86964472, "Lookups":2700, "Mallocs":1161769,"Frees":1027896, "HeapAlloc":63494528, "HeapSys":80084992, "HeapIdle":15532032, "HeapInuse":64552960,"HeapReleased":4554752, "HeapObjects":133873,"GCSys":2828288, "LastGC":1581940258308701677,"PauseTotalNs":55086405, "PauseNs":[], "NumGC":10}
+2020-02-17T11:53:21.495+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:53:22.598+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:53:22.598+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:53:22.599+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:53:22.610+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:53:22.610+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:53:22.611+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:53:51.497+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:53:52.599+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:53:52.599+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:53:52.600+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:53:52.611+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:53:52.611+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:53:52.612+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:54:00.293+00:00 [Info] Indexer::ReadMemstats Time Taken 176.4µs
+2020-02-17T11:54:21.298+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":117141504,"memory_quota":268435456,"memory_rss":36147200,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70158336,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940461298498485","timings/stats_response":"1441 137903300 62792711085412","uptime":"15m0.355449908s"}
+2020-02-17T11:54:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:54:21.435+00:00 [Info] memstats {"Alloc":59762560, "TotalAlloc":128140592, "Sys":86964472, "Lookups":2908, "Mallocs":1233979,"Frees":1155186, "HeapAlloc":59762560, "HeapSys":80084992, "HeapIdle":18677760, "HeapInuse":61407232,"HeapReleased":4554752, "HeapObjects":78793,"GCSys":2828288, "LastGC":1581940378337176703,"PauseTotalNs":55568005, "PauseNs":[481600], "NumGC":11}
+2020-02-17T11:54:21.500+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:54:22.600+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:54:22.600+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:54:22.601+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:54:22.612+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:54:22.612+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:54:22.613+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:54:23.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T11:54:51.502+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:54:52.601+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:54:52.601+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:54:52.602+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:54:52.614+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:54:52.614+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:54:52.615+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:55:03.293+00:00 [Info] Indexer::ReadMemstats Time Taken 141.9µs
+2020-02-17T11:55:21.298+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5666666666666667,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":110690304,"memory_quota":268435456,"memory_rss":36642816,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":67536896,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940521298904421","timings/stats_response":"1537 149632902 71686280472614","uptime":"16m0.355854344s"}
+2020-02-17T11:55:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:55:21.436+00:00 [Info] memstats {"Alloc":55850288, "TotalAlloc":132822864, "Sys":86964472, "Lookups":3102, "Mallocs":1315014,"Frees":1293468, "HeapAlloc":55850288, "HeapSys":79921152, "HeapIdle":21135360, "HeapInuse":58785792,"HeapReleased":5267456, "HeapObjects":21546,"GCSys":2828288, "LastGC":1581940498383784936,"PauseTotalNs":56268405, "PauseNs":[700400], "NumGC":12}
+2020-02-17T11:55:21.504+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:55:22.603+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:55:22.603+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:55:22.603+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:55:22.615+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:55:22.615+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:55:22.616+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:55:51.506+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:55:52.604+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:55:52.604+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:55:52.604+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:55:52.617+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:55:52.617+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:55:52.617+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:56:07.293+00:00 [Info] Indexer::ReadMemstats Time Taken 235.4µs
+2020-02-17T11:56:21.299+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":107327488,"memory_quota":268435456,"memory_rss":36642816,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70289408,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940581299257602","timings/stats_response":"1633 156768402 72298782402614","uptime":"17m0.356207025s"}
+==== StorageStats ====
+[
+]
+2020-02-17T11:56:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:56:21.436+00:00 [Info] memstats {"Alloc":60081040, "TotalAlloc":137053616, "Sys":86964472, "Lookups":3310, "Mallocs":1387045,"Frees":1303212, "HeapAlloc":60081040, "HeapSys":79953920, "HeapIdle":18415616, "HeapInuse":61538304,"HeapReleased":5267456, "HeapObjects":83833,"GCSys":2828288, "LastGC":1581940498383784936,"PauseTotalNs":56268405, "PauseNs":[], "NumGC":12}
+2020-02-17T11:56:21.452+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T11:56:21.509+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:56:22.605+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:56:22.605+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:56:22.607+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:56:22.618+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:56:22.618+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:56:22.618+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:56:51.510+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:56:52.607+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:56:52.607+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:56:52.608+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:56:52.619+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:56:52.619+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:56:52.620+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:57:07.294+00:00 [Info] Indexer::ReadMemstats Time Taken 300µs
+2020-02-17T11:57:21.299+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":118259712,"memory_quota":268435456,"memory_rss":30961664,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":67725312,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940641299663885","timings/stats_response":"1729 166195802 75159282442614","uptime":"18m0.356612308s"}
+2020-02-17T11:57:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:57:21.436+00:00 [Info] memstats {"Alloc":56100728, "TotalAlloc":141058912, "Sys":86964472, "Lookups":3502, "Mallocs":1455286,"Frees":1430039, "HeapAlloc":56100728, "HeapSys":79986688, "HeapIdle":21012480, "HeapInuse":58974208,"HeapReleased":13205504, "HeapObjects":25247,"GCSys":2828288, "LastGC":1581940618399556538,"PauseTotalNs":56735005, "PauseNs":[466600], "NumGC":13}
+2020-02-17T11:57:21.513+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:57:22.608+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:57:22.608+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:57:22.609+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:57:22.620+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:57:22.620+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:57:22.621+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:57:51.515+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:57:52.609+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:57:52.609+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:57:52.610+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:57:52.621+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:57:52.621+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:57:52.622+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:58:07.294+00:00 [Info] Indexer::ReadMemstats Time Taken 236µs
+2020-02-17T11:58:21.300+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":110673920,"memory_quota":268435456,"memory_rss":30961664,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70166528,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940701300068735","timings/stats_response":"1825 176094802 78912238262614","uptime":"19m0.357019758s"}
+2020-02-17T11:58:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:58:21.436+00:00 [Info] memstats {"Alloc":60081512, "TotalAlloc":145039696, "Sys":86964472, "Lookups":3694, "Mallocs":1523152,"Frees":1439440, "HeapAlloc":60081512, "HeapSys":79986688, "HeapIdle":18571264, "HeapInuse":61415424,"HeapReleased":13205504, "HeapObjects":83712,"GCSys":2828288, "LastGC":1581940618399556538,"PauseTotalNs":56735005, "PauseNs":[], "NumGC":13}
+2020-02-17T11:58:21.518+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:58:22.610+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:58:22.610+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:58:22.611+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:58:22.623+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:58:22.623+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:58:22.624+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:58:51.520+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:58:52.611+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:58:52.611+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:58:52.612+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:58:52.624+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:58:52.625+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:58:52.625+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:59:11.294+00:00 [Info] Indexer::ReadMemstats Time Taken 155.4µs
+2020-02-17T11:59:21.300+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":100311040,"memory_quota":268435456,"memory_rss":30961664,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":67954688,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940761300410669","timings/stats_response":"1921 183998402 80398623662614","uptime":"20m0.357361892s"}
+2020-02-17T11:59:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T11:59:21.437+00:00 [Info] memstats {"Alloc":56379176, "TotalAlloc":149305976, "Sys":86964472, "Lookups":3903, "Mallocs":1595645,"Frees":1566239, "HeapAlloc":56379176, "HeapSys":79986688, "HeapIdle":20783104, "HeapInuse":59203584,"HeapReleased":13205504, "HeapObjects":29406,"GCSys":2828288, "LastGC":1581940738428909843,"PauseTotalNs":57187405, "PauseNs":[452400], "NumGC":14}
+2020-02-17T11:59:21.523+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:59:22.612+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:59:22.612+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:59:22.613+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:59:22.625+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:59:22.625+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:59:22.626+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T11:59:24.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T11:59:51.526+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T11:59:52.613+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T11:59:52.614+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T11:59:52.615+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T11:59:52.626+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T11:59:52.626+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T11:59:52.627+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:00:15.294+00:00 [Info] Indexer::ReadMemstats Time Taken 226.3µs
+2020-02-17T12:00:21.300+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":110653440,"memory_quota":268435456,"memory_rss":30613504,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":71870464,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940821300790115","timings/stats_response":"2017 191360602 81119726302614","uptime":"21m0.357742238s"}
+2020-02-17T12:00:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:00:21.437+00:00 [Info] memstats {"Alloc":61870304, "TotalAlloc":154797104, "Sys":86964472, "Lookups":4113, "Mallocs":1690943,"Frees":1585331, "HeapAlloc":61870304, "HeapSys":80019456, "HeapIdle":16900096, "HeapInuse":63119360,"HeapReleased":13205504, "HeapObjects":105612,"GCSys":2828288, "LastGC":1581940738428909843,"PauseTotalNs":57187405, "PauseNs":[], "NumGC":14}
+2020-02-17T12:00:21.528+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:00:22.615+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:00:22.615+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:00:22.616+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:00:22.628+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:00:22.628+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:00:22.629+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:00:51.530+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:00:52.616+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:00:52.616+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:00:52.617+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:00:52.629+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:00:52.629+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:00:52.630+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:01:19.293+00:00 [Info] Indexer::ReadMemstats Time Taken 190.3µs
+2020-02-17T12:01:21.301+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":124874752,"memory_quota":268435456,"memory_rss":31281152,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":71870464,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940881301190713","timings/stats_response":"2113 198959902 81828831512614","uptime":"22m0.358149936s"}
+2020-02-17T12:01:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:01:21.437+00:00 [Info] memstats {"Alloc":56908552, "TotalAlloc":159070512, "Sys":86964472, "Lookups":4322, "Mallocs":1763471,"Frees":1726009, "HeapAlloc":56908552, "HeapSys":80052224, "HeapIdle":20480000, "HeapInuse":59572224,"HeapReleased":12435456, "HeapObjects":37462,"GCSys":2828288, "LastGC":1581940858446094328,"PauseTotalNs":57703905, "PauseNs":[516500], "NumGC":15}
+2020-02-17T12:01:21.532+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:01:22.617+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:01:22.617+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:01:22.618+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:01:22.630+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:01:22.630+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:01:22.631+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:01:51.535+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:01:52.619+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:01:52.619+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:01:52.620+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:01:52.631+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:01:52.631+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:01:52.632+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:02:19.294+00:00 [Info] Indexer::ReadMemstats Time Taken 183.2µs
+2020-02-17T12:02:21.301+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":117645312,"memory_quota":268435456,"memory_rss":30650368,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":68323328,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581940941301600154","timings/stats_response":"2209 208725102 86406956472614","uptime":"23m0.358550577s"}
+2020-02-17T12:02:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:02:21.438+00:00 [Info] memstats {"Alloc":60896544, "TotalAlloc":163058504, "Sys":86964472, "Lookups":4514, "Mallocs":1831519,"Frees":1735407, "HeapAlloc":60896544, "HeapSys":80019456, "HeapIdle":17891328, "HeapInuse":62128128,"HeapReleased":13066240, "HeapObjects":96112,"GCSys":2828288, "LastGC":1581940858446094328,"PauseTotalNs":57703905, "PauseNs":[], "NumGC":15}
+2020-02-17T12:02:21.454+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T12:02:21.537+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:02:22.620+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:02:22.620+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:02:22.621+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:02:22.632+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:02:22.632+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:02:22.633+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:02:51.539+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:02:52.621+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:02:52.622+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:02:52.622+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:02:52.633+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:02:52.634+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:02:52.634+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:03:21.302+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":123596800,"memory_quota":268435456,"memory_rss":30650368,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70879232,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941001301963344","timings/stats_response":"2305 216612902 87462474932614","uptime":"24m0.358913967s"}
+2020-02-17T12:03:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:03:21.438+00:00 [Info] memstats {"Alloc":60896544, "TotalAlloc":163058504, "Sys":86964472, "Lookups":4514, "Mallocs":1831519,"Frees":1735407, "HeapAlloc":60896544, "HeapSys":80019456, "HeapIdle":17891328, "HeapInuse":62128128,"HeapReleased":13066240, "HeapObjects":96112,"GCSys":2828288, "LastGC":1581940858446094328,"PauseTotalNs":57703905, "PauseNs":[], "NumGC":15}
+2020-02-17T12:03:21.542+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:03:22.293+00:00 [Info] Indexer::ReadMemstats Time Taken 174.7µs
+2020-02-17T12:03:22.623+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:03:22.623+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:03:22.624+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:03:22.635+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:03:22.635+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:03:22.636+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:03:51.545+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:03:52.624+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:03:52.624+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:03:52.625+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:03:52.636+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:03:52.636+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:03:52.636+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:04:21.302+00:00 [Info] PeriodicStats = {"cpu_utilization":0.46666666666666673,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":117612544,"memory_quota":268435456,"memory_rss":30650368,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":68618240,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941061302354360","timings/stats_response":"2401 223479802 88022243022614","uptime":"25m0.359300683s"}
+2020-02-17T12:04:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:04:21.438+00:00 [Info] memstats {"Alloc":57583712, "TotalAlloc":167747480, "Sys":86964472, "Lookups":4706, "Mallocs":1912466,"Frees":1867047, "HeapAlloc":57583712, "HeapSys":80084992, "HeapIdle":20217856, "HeapInuse":59867136,"HeapReleased":13066240, "HeapObjects":45419,"GCSys":2828288, "LastGC":1581940978483304604,"PauseTotalNs":58243105, "PauseNs":[539200], "NumGC":16}
+2020-02-17T12:04:21.547+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:04:22.625+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:04:22.625+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:04:22.626+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:04:22.637+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:04:22.637+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:04:22.637+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:04:25.293+00:00 [Info] Indexer::ReadMemstats Time Taken 141.4µs
+2020-02-17T12:04:25.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T12:04:51.549+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:04:52.627+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:04:52.627+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:04:52.628+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:04:52.638+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:04:52.638+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:04:52.640+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:05:21.302+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":117854208,"memory_quota":268435456,"memory_rss":30650368,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":72419328,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941121302866978","timings/stats_response":"2497 231106302 88808753072614","uptime":"26m0.359820501s"}
+2020-02-17T12:05:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:05:21.439+00:00 [Info] memstats {"Alloc":62438728, "TotalAlloc":172602496, "Sys":86964472, "Lookups":4914, "Mallocs":1996360,"Frees":1881482, "HeapAlloc":62438728, "HeapSys":80084992, "HeapIdle":16416768, "HeapInuse":63668224,"HeapReleased":13066240, "HeapObjects":114878,"GCSys":2828288, "LastGC":1581940978483304604,"PauseTotalNs":58243105, "PauseNs":[], "NumGC":16}
+2020-02-17T12:05:21.552+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:05:22.629+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:05:22.629+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:05:22.630+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:05:22.640+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:05:22.641+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:05:22.643+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:05:25.294+00:00 [Info] Indexer::ReadMemstats Time Taken 213.4µs
+2020-02-17T12:05:51.555+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:05:52.630+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:05:52.630+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:05:52.631+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:05:52.643+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:05:52.643+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:05:52.644+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:06:21.303+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":107933696,"memory_quota":268435456,"memory_rss":30650368,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":68904960,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941181303296955","timings/stats_response":"2593 240277202 92420316182614","uptime":"27m0.360244178s"}
+2020-02-17T12:06:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:06:21.439+00:00 [Info] memstats {"Alloc":57829624, "TotalAlloc":176604248, "Sys":86964472, "Lookups":5106, "Mallocs":2064345,"Frees":2015255, "HeapAlloc":57829624, "HeapSys":80052224, "HeapIdle":19898368, "HeapInuse":60153856,"HeapReleased":13066240, "HeapObjects":49090,"GCSys":2828288, "LastGC":1581941098507159925,"PauseTotalNs":58713305, "PauseNs":[470200], "NumGC":17}
+2020-02-17T12:06:21.557+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:06:22.631+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:06:22.631+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:06:22.632+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:06:22.644+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:06:22.644+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:06:22.646+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:06:28.294+00:00 [Info] Indexer::ReadMemstats Time Taken 418.3µs
+2020-02-17T12:06:51.560+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:06:52.632+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:06:52.632+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:06:52.633+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:06:52.646+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:06:52.646+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:06:52.647+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:07:21.303+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":109043712,"memory_quota":268435456,"memory_rss":30519296,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":71739392,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941241303640034","timings/stats_response":"2689 248849702 96816653892614","uptime":"28m0.360590657s"}
+2020-02-17T12:07:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:07:21.439+00:00 [Info] memstats {"Alloc":61873824, "TotalAlloc":180648448, "Sys":86964472, "Lookups":5298, "Mallocs":2133392,"Frees":2024771, "HeapAlloc":61873824, "HeapSys":80052224, "HeapIdle":17063936, "HeapInuse":62988288,"HeapReleased":13066240, "HeapObjects":108621,"GCSys":2828288, "LastGC":1581941098507159925,"PauseTotalNs":58713305, "PauseNs":[], "NumGC":17}
+2020-02-17T12:07:21.562+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:07:22.634+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:07:22.634+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:07:22.635+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:07:22.647+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:07:22.647+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:07:22.648+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:07:32.293+00:00 [Info] Indexer::ReadMemstats Time Taken 209.6µs
+2020-02-17T12:07:51.564+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:07:52.635+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:07:52.635+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:07:52.636+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:07:52.649+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:07:52.649+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:07:52.649+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:08:21.304+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":99594240,"memory_quota":268435456,"memory_rss":30519296,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69117952,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941301303972465","timings/stats_response":"2785 257418302 99303318172614","uptime":"29m0.360922188s"}
+2020-02-17T12:08:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:08:21.439+00:00 [Info] memstats {"Alloc":58161296, "TotalAlloc":184918664, "Sys":86964472, "Lookups":5506, "Mallocs":2205813,"Frees":2151571, "HeapAlloc":58161296, "HeapSys":80084992, "HeapIdle":19718144, "HeapInuse":60366848,"HeapReleased":13197312, "HeapObjects":54242,"GCSys":2828288, "LastGC":1581941218521657527,"PauseTotalNs":59178305, "PauseNs":[465000], "NumGC":18}
+2020-02-17T12:08:21.454+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T12:08:21.566+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:08:22.636+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:08:22.637+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:08:22.637+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:08:22.650+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:08:22.650+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:08:22.651+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:08:35.293+00:00 [Info] Indexer::ReadMemstats Time Taken 216.6µs
+2020-02-17T12:08:51.569+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:08:52.638+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:08:52.638+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:08:52.639+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:08:52.651+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:08:52.651+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:08:52.652+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:09:21.304+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5666666666666667,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":113164288,"memory_quota":268435456,"memory_rss":30351360,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":72214528,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941361304352091","timings/stats_response":"2881 265677202 101257925222614","uptime":"30m0.361302914s"}
+2020-02-17T12:09:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:09:21.440+00:00 [Info] memstats {"Alloc":62403920, "TotalAlloc":189161288, "Sys":86964472, "Lookups":5714, "Mallocs":2278050,"Frees":2161335, "HeapAlloc":62403920, "HeapSys":80084992, "HeapIdle":16621568, "HeapInuse":63463424,"HeapReleased":13197312, "HeapObjects":116715,"GCSys":2828288, "LastGC":1581941218521657527,"PauseTotalNs":59178305, "PauseNs":[], "NumGC":18}
+2020-02-17T12:09:21.571+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:09:22.639+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:09:22.639+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:09:22.640+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:09:22.652+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:09:22.652+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:09:22.653+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:09:26.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T12:09:35.294+00:00 [Info] Indexer::ReadMemstats Time Taken 225.7µs
+2020-02-17T12:09:51.573+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:09:52.640+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:09:52.640+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:09:52.641+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:09:52.653+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:09:52.653+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:09:52.655+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:10:21.304+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":110587904,"memory_quota":268435456,"memory_rss":30613504,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69969920,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941421304781546","timings/stats_response":"2977 273348802 102149522882614","uptime":"31m0.361735769s"}
+2020-02-17T12:10:21.427+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:10:21.440+00:00 [Info] memstats {"Alloc":59614920, "TotalAlloc":194372352, "Sys":86964472, "Lookups":5908, "Mallocs":2368950,"Frees":2297452, "HeapAlloc":59614920, "HeapSys":79790080, "HeapIdle":18571264, "HeapInuse":61218816,"HeapReleased":13197312, "HeapObjects":71498,"GCSys":2828288, "LastGC":1581941338545976415,"PauseTotalNs":59798905, "PauseNs":[620600], "NumGC":19}
+2020-02-17T12:10:21.575+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:10:22.641+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:10:22.641+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:10:22.643+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:10:22.655+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:10:22.655+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:10:22.656+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:10:39.294+00:00 [Info] Indexer::ReadMemstats Time Taken 507.6µs
+2020-02-17T12:10:51.578+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:10:52.643+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:10:52.643+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:10:52.644+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:10:52.656+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:10:52.656+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:10:52.657+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:11:21.305+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":99426304,"memory_quota":268435456,"memory_rss":31162368,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":73492480,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941481305098136","timings/stats_response":"3073 282795302 104716667172614","uptime":"32m0.362049159s"}
+2020-02-17T12:11:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:11:21.440+00:00 [Info] memstats {"Alloc":63691912, "TotalAlloc":198449344, "Sys":86964472, "Lookups":6100, "Mallocs":2438730,"Frees":2307028, "HeapAlloc":63691912, "HeapSys":79757312, "HeapIdle":15015936, "HeapInuse":64741376,"HeapReleased":13197312, "HeapObjects":131702,"GCSys":2828288, "LastGC":1581941338545976415,"PauseTotalNs":59798905, "PauseNs":[], "NumGC":19}
+2020-02-17T12:11:21.581+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:11:22.645+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:11:22.645+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:11:22.646+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:11:22.658+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:11:22.658+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:11:22.658+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:11:39.294+00:00 [Info] Indexer::ReadMemstats Time Taken 577.3µs
+2020-02-17T12:11:51.585+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:11:52.646+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:11:52.646+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:11:52.648+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:11:52.659+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:11:52.659+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:11:52.660+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:12:21.305+00:00 [Info] PeriodicStats = {"cpu_utilization":0.46666666666666673,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":123346944,"memory_quota":268435456,"memory_rss":29790208,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69044224,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941541305481768","timings/stats_response":"3169 292007002 108746651942614","uptime":"33m0.362434991s"}
+2020-02-17T12:12:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:12:21.440+00:00 [Info] memstats {"Alloc":58486272, "TotalAlloc":202450120, "Sys":86964472, "Lookups":6292, "Mallocs":2506872,"Frees":2447352, "HeapAlloc":58486272, "HeapSys":79921152, "HeapIdle":19628032, "HeapInuse":60293120,"HeapReleased":12214272, "HeapObjects":59520,"GCSys":2828288, "LastGC":1581941458568021617,"PauseTotalNs":60404705, "PauseNs":[605800], "NumGC":20}
+2020-02-17T12:12:21.587+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:12:22.648+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:12:22.648+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:12:22.649+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:12:22.660+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:12:22.660+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:12:22.661+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:12:43.294+00:00 [Info] Indexer::ReadMemstats Time Taken 174.2µs
+2020-02-17T12:12:51.590+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:12:52.649+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:12:52.649+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:12:52.650+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:12:52.662+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:12:52.662+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:12:52.663+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:13:21.306+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":122580992,"memory_quota":268435456,"memory_rss":29790208,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":72648704,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941601305872874","timings/stats_response":"3265 299242102 109504489112614","uptime":"34m0.362824197s"}
+==== StorageStats ====
+[
+]
+2020-02-17T12:13:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:13:21.441+00:00 [Info] memstats {"Alloc":62706992, "TotalAlloc":206670840, "Sys":86964472, "Lookups":6500, "Mallocs":2578803,"Frees":2457091, "HeapAlloc":62706992, "HeapSys":79921152, "HeapIdle":16023552, "HeapInuse":63897600,"HeapReleased":13582336, "HeapObjects":121712,"GCSys":2828288, "LastGC":1581941458568021617,"PauseTotalNs":60404705, "PauseNs":[], "NumGC":20}
+2020-02-17T12:13:21.593+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:13:22.651+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:13:22.651+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:13:22.651+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:13:22.663+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:13:22.663+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:13:22.664+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:13:46.293+00:00 [Info] Indexer::ReadMemstats Time Taken 180.2µs
+2020-02-17T12:13:51.596+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:13:52.652+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:13:52.652+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:13:52.653+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:13:52.664+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:13:52.664+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:13:52.665+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:14:21.306+00:00 [Info] PeriodicStats = {"cpu_utilization":0.46666666666666673,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":108613632,"memory_quota":268435456,"memory_rss":29495296,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69683200,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941661306363712","timings/stats_response":"3361 306322102 110146384992614","uptime":"35m0.363318335s"}
+2020-02-17T12:14:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:14:21.441+00:00 [Info] memstats {"Alloc":58997480, "TotalAlloc":210939608, "Sys":86964472, "Lookups":6709, "Mallocs":2651080,"Frees":2584073, "HeapAlloc":58997480, "HeapSys":79986688, "HeapIdle":19054592, "HeapInuse":60932096,"HeapReleased":13582336, "HeapObjects":67007,"GCSys":2828288, "LastGC":1581941578591646145,"PauseTotalNs":60568905, "PauseNs":[164200], "NumGC":21}
+2020-02-17T12:14:21.450+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T12:14:21.598+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:14:22.653+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:14:22.653+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:14:22.654+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:14:22.665+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:14:22.666+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:14:22.667+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:14:27.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T12:14:46.294+00:00 [Info] Indexer::ReadMemstats Time Taken 200.5µs
+2020-02-17T12:14:51.600+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:14:52.654+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:14:52.654+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:14:52.655+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:14:52.667+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:14:52.667+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:14:52.668+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:15:21.306+00:00 [Info] PeriodicStats = {"cpu_utilization":0.6,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":107606016,"memory_quota":268435456,"memory_rss":29495296,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":73435136,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941721306829083","timings/stats_response":"3457 313485102 110936973552614","uptime":"36m0.363781106s"}
+2020-02-17T12:15:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:15:21.441+00:00 [Info] memstats {"Alloc":63598048, "TotalAlloc":215540176, "Sys":86964472, "Lookups":6901, "Mallocs":2730697,"Frees":2598199, "HeapAlloc":63598048, "HeapSys":79986688, "HeapIdle":15302656, "HeapInuse":64684032,"HeapReleased":13877248, "HeapObjects":132498,"GCSys":2828288, "LastGC":1581941578591646145,"PauseTotalNs":60568905, "PauseNs":[], "NumGC":21}
+2020-02-17T12:15:21.603+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:15:22.655+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:15:22.655+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:15:22.657+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:15:22.669+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:15:22.669+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:15:22.670+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:15:49.293+00:00 [Info] Indexer::ReadMemstats Time Taken 185.7µs
+2020-02-17T12:15:51.605+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:15:52.657+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:15:52.657+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:15:52.658+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:15:52.670+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:15:52.670+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:15:52.671+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:16:21.307+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":106962944,"memory_quota":268435456,"memory_rss":29495296,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69535744,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941781307180688","timings/stats_response":"3553 321571202 112465298982614","uptime":"37m0.364130711s"}
+2020-02-17T12:16:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:16:21.441+00:00 [Info] memstats {"Alloc":59043280, "TotalAlloc":219606040, "Sys":86964472, "Lookups":7094, "Mallocs":2799955,"Frees":2732180, "HeapAlloc":59043280, "HeapSys":80019456, "HeapIdle":19234816, "HeapInuse":60784640,"HeapReleased":13877248, "HeapObjects":67775,"GCSys":2828288, "LastGC":1581941698617099261,"PauseTotalNs":61032105, "PauseNs":[463200], "NumGC":22}
+2020-02-17T12:16:21.608+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:16:22.658+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:16:22.658+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:16:22.660+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:16:22.671+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:16:22.671+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:16:22.672+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:16:51.610+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:16:52.293+00:00 [Info] Indexer::ReadMemstats Time Taken 261.3µs
+2020-02-17T12:16:52.660+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:16:52.660+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:16:52.661+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:16:52.672+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:16:52.672+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:16:52.673+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:17:21.307+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":118263808,"memory_quota":268435456,"memory_rss":28925952,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":73205760,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941841307497602","timings/stats_response":"3649 328646002 113083332982614","uptime":"38m0.364448125s"}
+2020-02-17T12:17:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:17:21.442+00:00 [Info] memstats {"Alloc":63275248, "TotalAlloc":223838008, "Sys":86964472, "Lookups":7302, "Mallocs":2872036,"Frees":2741910, "HeapAlloc":63275248, "HeapSys":80019456, "HeapIdle":15564800, "HeapInuse":64454656,"HeapReleased":14147584, "HeapObjects":130126,"GCSys":2828288, "LastGC":1581941698617099261,"PauseTotalNs":61032105, "PauseNs":[], "NumGC":22}
+2020-02-17T12:17:21.613+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:17:22.661+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:17:22.662+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:17:22.662+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:17:22.673+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:17:22.673+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:17:22.674+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:17:51.615+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:17:52.663+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:17:52.663+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:17:52.664+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:17:52.675+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:17:52.675+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:17:52.675+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:17:54.294+00:00 [Info] Indexer::ReadMemstats Time Taken 459.8µs
+2020-02-17T12:18:21.307+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":106651648,"memory_quota":268435456,"memory_rss":28925952,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":69584896,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941901307840608","timings/stats_response":"3745 335426102 113614141092614","uptime":"39m0.364789731s"}
+2020-02-17T12:18:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:18:21.442+00:00 [Info] memstats {"Alloc":59310360, "TotalAlloc":227872080, "Sys":86964472, "Lookups":7494, "Mallocs":2940853,"Frees":2868719, "HeapAlloc":59310360, "HeapSys":80019456, "HeapIdle":19185664, "HeapInuse":60833792,"HeapReleased":14147584, "HeapObjects":72134,"GCSys":2828288, "LastGC":1581941818635103526,"PauseTotalNs":61580505, "PauseNs":[548400], "NumGC":23}
+2020-02-17T12:18:21.617+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:18:22.664+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:18:22.664+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:18:22.665+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:18:22.676+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:18:22.676+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:18:22.676+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:18:51.620+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:18:52.665+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:18:52.665+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:18:52.666+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:18:52.677+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:18:52.677+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:18:52.678+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:18:57.293+00:00 [Info] Indexer::ReadMemstats Time Taken 211.9µs
+2020-02-17T12:19:21.308+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":99430400,"memory_quota":268435456,"memory_rss":28921856,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":73426944,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581941961308142951","timings/stats_response":"3841 342005402 114104804222614","uptime":"40m0.365093574s"}
+2020-02-17T12:19:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:19:21.443+00:00 [Info] memstats {"Alloc":63548080, "TotalAlloc":232109800, "Sys":86964472, "Lookups":7702, "Mallocs":3013152,"Frees":2878470, "HeapAlloc":63548080, "HeapSys":80019456, "HeapIdle":15343616, "HeapInuse":64675840,"HeapReleased":14147584, "HeapObjects":134682,"GCSys":2828288, "LastGC":1581941818635103526,"PauseTotalNs":61580505, "PauseNs":[], "NumGC":23}
+2020-02-17T12:19:21.622+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:19:22.666+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:19:22.666+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:19:22.667+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:19:22.678+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:19:22.678+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:19:22.679+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:19:28.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T12:19:51.625+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:19:52.668+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:19:52.668+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:19:52.668+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:19:52.679+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:19:52.679+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:19:52.680+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:19:57.293+00:00 [Info] Indexer::ReadMemstats Time Taken 167.5µs
+2020-02-17T12:20:21.308+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":102531072,"memory_quota":268435456,"memory_rss":28921856,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":71141376,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942021308452607","timings/stats_response":"3937 348687802 114639584702614","uptime":"41m0.36539973s"}
+2020-02-17T12:20:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:20:21.443+00:00 [Info] memstats {"Alloc":60787704, "TotalAlloc":237339224, "Sys":86964472, "Lookups":7894, "Mallocs":3104467,"Frees":3014832, "HeapAlloc":60787704, "HeapSys":80019456, "HeapIdle":17629184, "HeapInuse":62390272,"HeapReleased":14278656, "HeapObjects":89635,"GCSys":2828288, "LastGC":1581941938665026138,"PauseTotalNs":62155605, "PauseNs":[575100], "NumGC":24}
+2020-02-17T12:20:21.450+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T12:20:21.628+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:20:22.669+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:20:22.669+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:20:22.670+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:20:22.681+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:20:22.681+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:20:22.681+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:20:51.630+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:20:52.670+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:20:52.670+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:20:52.671+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:20:52.682+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:20:52.682+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:20:52.683+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:21:00.294+00:00 [Info] Indexer::ReadMemstats Time Taken 220.4µs
+2020-02-17T12:21:21.308+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5666666666666667,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":103870464,"memory_quota":268435456,"memory_rss":29204480,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":67594240,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942081308802737","timings/stats_response":"4033 356802402 116073927702614","uptime":"42m0.36575426s"}
+2020-02-17T12:21:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:21:21.443+00:00 [Info] memstats {"Alloc":55635768, "TotalAlloc":241404840, "Sys":86964472, "Lookups":8086, "Mallocs":3174026,"Frees":3155651, "HeapAlloc":55635768, "HeapSys":80084992, "HeapIdle":21241856, "HeapInuse":58843136,"HeapReleased":14008320, "HeapObjects":18375,"GCSys":2828288, "LastGC":1581942058693136531,"PauseTotalNs":62671205, "PauseNs":[515600], "NumGC":25}
+2020-02-17T12:21:21.633+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:21:22.671+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:21:22.671+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:21:22.672+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:21:22.683+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:21:22.683+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:21:22.684+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:21:51.635+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:21:52.673+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:21:52.673+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:21:52.673+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:21:52.684+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:21:52.684+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:21:52.685+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:22:00.293+00:00 [Info] Indexer::ReadMemstats Time Taken 189.7µs
+2020-02-17T12:22:21.309+00:00 [Info] PeriodicStats = {"cpu_utilization":0.46666666666666673,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":103354368,"memory_quota":268435456,"memory_rss":29081600,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70051840,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942141309118310","timings/stats_response":"4129 363728202 116635100362614","uptime":"43m0.366069433s"}
+2020-02-17T12:22:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:22:21.444+00:00 [Info] memstats {"Alloc":59627656, "TotalAlloc":245396728, "Sys":86964472, "Lookups":8278, "Mallocs":3242077,"Frees":3165059, "HeapAlloc":59627656, "HeapSys":80019456, "HeapIdle":18718720, "HeapInuse":61300736,"HeapReleased":14131200, "HeapObjects":77018,"GCSys":2828288, "LastGC":1581942058693136531,"PauseTotalNs":62671205, "PauseNs":[], "NumGC":25}
+2020-02-17T12:22:21.638+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:22:22.674+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:22:22.674+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:22:22.674+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:22:22.685+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:22:22.685+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:22:22.686+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:22:51.640+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:22:52.675+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:22:52.675+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:22:52.676+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:22:52.686+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:22:52.686+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:22:52.688+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:23:00.294+00:00 [Info] Indexer::ReadMemstats Time Taken 204.6µs
+2020-02-17T12:23:21.309+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5666666666666667,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":107241472,"memory_quota":268435456,"memory_rss":29081600,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":67594240,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942201309435913","timings/stats_response":"4225 370450302 117185636112614","uptime":"44m0.366388836s"}
+2020-02-17T12:23:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:23:21.444+00:00 [Info] memstats {"Alloc":55641192, "TotalAlloc":249384016, "Sys":86964472, "Lookups":8470, "Mallocs":3310169,"Frees":3291720, "HeapAlloc":55641192, "HeapSys":80052224, "HeapIdle":21209088, "HeapInuse":58843136,"HeapReleased":14131200, "HeapObjects":18449,"GCSys":2828288, "LastGC":1581942178734893906,"PauseTotalNs":63241505, "PauseNs":[570300], "NumGC":26}
+2020-02-17T12:23:21.642+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:23:22.676+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:23:22.676+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:23:22.677+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:23:22.688+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:23:22.688+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:23:22.689+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:23:51.645+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:23:52.677+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:23:52.678+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:23:52.678+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:23:52.689+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:23:52.689+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:23:52.690+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:24:04.294+00:00 [Info] Indexer::ReadMemstats Time Taken 177.7µs
+2020-02-17T12:24:21.309+00:00 [Info] PeriodicStats = {"cpu_utilization":0.46666666666666673,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":95879168,"memory_quota":268435456,"memory_rss":29081600,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70297600,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942261309811052","timings/stats_response":"4321 380998402 126039819262614","uptime":"45m0.366761975s"}
+2020-02-17T12:24:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:24:21.444+00:00 [Info] memstats {"Alloc":59863024, "TotalAlloc":253605848, "Sys":86964472, "Lookups":8678, "Mallocs":3381956,"Frees":3301438, "HeapAlloc":59863024, "HeapSys":80019456, "HeapIdle":18472960, "HeapInuse":61546496,"HeapReleased":14131200, "HeapObjects":80518,"GCSys":2828288, "LastGC":1581942178734893906,"PauseTotalNs":63241505, "PauseNs":[], "NumGC":26}
+2020-02-17T12:24:21.647+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:24:22.679+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:24:22.679+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:24:22.680+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:24:22.690+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:24:22.690+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:24:22.691+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:24:29.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T12:24:51.650+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:24:52.680+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:24:52.680+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:24:52.682+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:24:52.692+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:24:52.692+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:24:52.692+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:25:07.293+00:00 [Info] Indexer::ReadMemstats Time Taken 247.5µs
+2020-02-17T12:25:21.310+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":112893952,"memory_quota":268435456,"memory_rss":28540928,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":67913728,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942321310096122","timings/stats_response":"4417 388924902 127077312952614","uptime":"46m0.367046645s"}
+2020-02-17T12:25:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:25:21.445+00:00 [Info] memstats {"Alloc":56140024, "TotalAlloc":258472544, "Sys":86964472, "Lookups":8888, "Mallocs":3465763,"Frees":3439953, "HeapAlloc":56140024, "HeapSys":79953920, "HeapIdle":20791296, "HeapInuse":59162624,"HeapReleased":14131200, "HeapObjects":25810,"GCSys":2828288, "LastGC":1581942298839185014,"PauseTotalNs":63917705, "PauseNs":[676200], "NumGC":27}
+2020-02-17T12:25:21.653+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:25:22.682+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:25:22.682+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:25:22.683+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:25:22.693+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:25:22.693+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:25:22.694+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:25:51.655+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:25:52.683+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:25:52.683+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:25:52.684+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:25:52.695+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:25:52.695+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:25:52.696+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:26:10.294+00:00 [Info] Indexer::ReadMemstats Time Taken 153.1µs
+2020-02-17T12:26:21.310+00:00 [Info] PeriodicStats = {"cpu_utilization":0.46666666666666673,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":104124416,"memory_quota":268435456,"memory_rss":28540928,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70592512,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942381310445695","timings/stats_response":"4513 395909902 127669836372614","uptime":"47m0.367395918s"}
+2020-02-17T12:26:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:26:21.445+00:00 [Info] memstats {"Alloc":60202704, "TotalAlloc":262535224, "Sys":86964472, "Lookups":9080, "Mallocs":3535375,"Frees":3449501, "HeapAlloc":60202704, "HeapSys":79921152, "HeapIdle":18079744, "HeapInuse":61841408,"HeapReleased":14131200, "HeapObjects":85874,"GCSys":2828288, "LastGC":1581942298839185014,"PauseTotalNs":63917705, "PauseNs":[], "NumGC":27}
+2020-02-17T12:26:21.453+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T12:26:21.657+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:26:22.684+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:26:22.684+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:26:22.685+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:26:22.696+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:26:22.696+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:26:22.696+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:26:51.661+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:26:52.686+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:26:52.686+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:26:52.687+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:26:52.697+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:26:52.697+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:26:52.698+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:27:14.293+00:00 [Info] Indexer::ReadMemstats Time Taken 257µs
+2020-02-17T12:27:21.310+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5666666666666667,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":104640512,"memory_quota":268435456,"memory_rss":28270592,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":67962880,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942441310857860","timings/stats_response":"4609 403022202 128282629082614","uptime":"48m0.367808583s"}
+2020-02-17T12:27:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:27:21.445+00:00 [Info] memstats {"Alloc":56430616, "TotalAlloc":266775248, "Sys":86964472, "Lookups":9288, "Mallocs":3607325,"Frees":3577065, "HeapAlloc":56430616, "HeapSys":80052224, "HeapIdle":20840448, "HeapInuse":59211776,"HeapReleased":14458880, "HeapObjects":30260,"GCSys":2828288, "LastGC":1581942418909775583,"PauseTotalNs":64407205, "PauseNs":[489500], "NumGC":28}
+2020-02-17T12:27:21.664+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:27:22.687+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:27:22.687+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:27:22.688+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:27:22.698+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:27:22.698+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:27:22.699+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:27:51.666+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:27:52.688+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:27:52.688+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:27:52.689+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:27:52.699+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:27:52.699+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:27:52.701+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:28:14.293+00:00 [Info] Indexer::ReadMemstats Time Taken 203.5µs
+2020-02-17T12:28:21.311+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":101814272,"memory_quota":268435456,"memory_rss":28270592,"memory_total":2085535744,"memory_total_storage":5746688,"memory_used":70682624,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942501311222818","timings/stats_response":"4705 410045802 128962188482614","uptime":"49m0.368204941s"}
+2020-02-17T12:28:21.427+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:28:21.445+00:00 [Info] memstats {"Alloc":60414952, "TotalAlloc":270759584, "Sys":86964472, "Lookups":9481, "Mallocs":3675281,"Frees":3586466, "HeapAlloc":60414952, "HeapSys":79986688, "HeapIdle":18055168, "HeapInuse":61931520,"HeapReleased":14458880, "HeapObjects":88815,"GCSys":2828288, "LastGC":1581942418909775583,"PauseTotalNs":64407205, "PauseNs":[], "NumGC":28}
+2020-02-17T12:28:21.672+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:28:22.689+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:28:22.689+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:28:22.691+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:28:22.701+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:28:22.701+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:28:22.702+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:28:51.675+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:28:52.691+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:28:52.691+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:28:52.692+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:28:52.702+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:28:52.702+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:28:52.702+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:29:16.293+00:00 [Info] Indexer::ReadMemstats Time Taken 183µs
+2020-02-17T12:29:21.311+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5666666666666667,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":93265920,"memory_quota":268435456,"memory_rss":28487680,"memory_total":2085535744,"memory_total_storage":5378048,"memory_used":67840000,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942561311513590","timings/stats_response":"4801 417044401 129640601039815","uptime":"50m0.368464113s"}
+2020-02-17T12:29:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:29:21.445+00:00 [Info] memstats {"Alloc":56684832, "TotalAlloc":275002752, "Sys":86964472, "Lookups":9689, "Mallocs":3747348,"Frees":3713445, "HeapAlloc":56684832, "HeapSys":80019456, "HeapIdle":20561920, "HeapInuse":59457536,"HeapReleased":14458880, "HeapObjects":33903,"GCSys":2828288, "LastGC":1581942539045977074,"PauseTotalNs":65013205, "PauseNs":[606000], "NumGC":29}
+2020-02-17T12:29:21.677+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:29:22.692+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:29:22.692+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:29:22.694+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:29:22.703+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:29:22.703+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:29:22.704+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:29:30.418+00:00 [Info] DDLServiceMgr checking create token progress
+2020-02-17T12:29:51.680+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:29:52.694+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:29:52.694+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:29:52.695+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:29:52.704+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:29:52.704+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:29:52.705+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:30:20.294+00:00 [Info] Indexer::ReadMemstats Time Taken 230.5µs
+2020-02-17T12:30:21.311+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":123904000,"memory_quota":268435456,"memory_rss":28102656,"memory_total":2085535744,"memory_total_storage":5378048,"memory_used":67840000,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942621311824510","timings/stats_response":"4897 423877800 130191974133016","uptime":"51m0.368775533s"}
+==== StorageStats ====
+[
+]
+2020-02-17T12:30:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:30:21.446+00:00 [Info] memstats {"Alloc":61953000, "TotalAlloc":280270920, "Sys":86964472, "Lookups":9882, "Mallocs":3839681,"Frees":3732310, "HeapAlloc":61953000, "HeapSys":79986688, "HeapIdle":16621568, "HeapInuse":63365120,"HeapReleased":14458880, "HeapObjects":107371,"GCSys":2828288, "LastGC":1581942539045977074,"PauseTotalNs":65013205, "PauseNs":[], "NumGC":29}
+2020-02-17T12:30:21.682+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:30:22.695+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:30:22.695+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:30:22.696+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:30:22.706+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:30:22.706+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:30:22.707+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:30:51.684+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:30:52.697+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:30:52.697+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:30:52.697+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:30:52.707+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:30:52.707+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:30:52.708+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:31:21.312+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":119529472,"memory_quota":268435456,"memory_rss":28389376,"memory_total":2085535744,"memory_total_storage":5378048,"memory_used":71747584,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942681312142053","timings/stats_response":"4993 431997500 131669252743016","uptime":"52m0.369094476s"}
+2020-02-17T12:31:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:31:21.446+00:00 [Info] memstats {"Alloc":61953000, "TotalAlloc":280270920, "Sys":86964472, "Lookups":9882, "Mallocs":3839681,"Frees":3732310, "HeapAlloc":61953000, "HeapSys":79986688, "HeapIdle":16621568, "HeapInuse":63365120,"HeapReleased":14458880, "HeapObjects":107371,"GCSys":2828288, "LastGC":1581942539045977074,"PauseTotalNs":65013205, "PauseNs":[], "NumGC":29}
+2020-02-17T12:31:21.687+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:31:22.698+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:31:22.698+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:31:22.699+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:31:22.708+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:31:22.708+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:31:22.709+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:31:24.293+00:00 [Info] Indexer::ReadMemstats Time Taken 182.7µs
+2020-02-17T12:31:51.689+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:31:52.699+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:31:52.699+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:31:52.700+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:31:52.710+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:31:52.710+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:31:52.712+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:32:21.313+00:00 [Info] PeriodicStats = {"cpu_utilization":0.4,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":117710848,"memory_quota":268435456,"memory_rss":28389376,"memory_total":2085535744,"memory_total_storage":5378048,"memory_used":68134912,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942741313830304","timings/stats_response":"5089 441268600 137349512293016","uptime":"53m0.370806327s"}
+2020-02-17T12:32:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:32:21.446+00:00 [Info] memstats {"Alloc":57621928, "TotalAlloc":285147040, "Sys":86964472, "Lookups":10090, "Mallocs":3923791,"Frees":3877701, "HeapAlloc":57621928, "HeapSys":80019456, "HeapIdle":20267008, "HeapInuse":59752448,"HeapReleased":14131200, "HeapObjects":46090,"GCSys":2828288, "LastGC":1581942659239995975,"PauseTotalNs":65408905, "PauseNs":[395700], "NumGC":30}
+2020-02-17T12:32:21.459+00:00 [Info] updator: updating service map.  server group=Group 1, indexerVersion=4 nodeAddr 10.0.2.13:8091 clusterVersion 4 excludeNode  storageMode 2
+2020-02-17T12:32:21.691+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:32:22.701+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:32:22.701+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:32:22.702+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:32:22.712+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:32:22.712+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:32:22.713+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:32:27.293+00:00 [Info] Indexer::ReadMemstats Time Taken 181.7µs
+2020-02-17T12:32:51.694+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:32:52.702+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:32:52.702+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:32:52.703+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:32:52.713+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:32:52.713+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:32:52.715+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:33:21.314+00:00 [Info] PeriodicStats = {"cpu_utilization":0.5333333333333333,"index_not_found_errcount":0,"indexer_state":"Active","memory_free":114335744,"memory_quota":268435456,"memory_rss":28389376,"memory_total":2085535744,"memory_total_storage":5378048,"memory_used":71313408,"memory_used_queue":0,"memory_used_storage":176128,"needs_restart":false,"num_connections":1,"num_cpu_core":4,"storage_mode":"plasma","timestamp":"1581942801314194982","timings/stats_response":"5185 448197700 137897538163016","uptime":"54m0.371148305s"}
+2020-02-17T12:33:21.426+00:00 [Info] janitor: running cleanup.
+2020-02-17T12:33:21.446+00:00 [Info] memstats {"Alloc":61869856, "TotalAlloc":289394968, "Sys":86964472, "Lookups":10298, "Mallocs":3996123,"Frees":3887481, "HeapAlloc":61869856, "HeapSys":80019456, "HeapIdle":17088512, "HeapInuse":62930944,"HeapReleased":14131200, "HeapObjects":108642,"GCSys":2828288, "LastGC":1581942659239995975,"PauseTotalNs":65408905, "PauseNs":[], "NumGC":30}
+2020-02-17T12:33:21.695+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:33:22.704+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:33:22.704+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:33:22.705+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:33:22.715+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:33:22.715+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:33:22.716+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
+2020-02-17T12:33:27.293+00:00 [Info] Indexer::ReadMemstats Time Taken 193.9µs
+2020-02-17T12:33:51.698+00:00 [Info] ServiceMgr::rebalanceJanitor Running Periodic Cleanup
+2020-02-17T12:33:52.705+00:00 [Info] ServiceMgr::GetTaskList []
+2020-02-17T12:33:52.705+00:00 [Info] ServiceMgr::GetTaskList returns &{[0 0 0 0 0 0 0 2] []}
+2020-02-17T12:33:52.706+00:00 [Info] ServiceMgr::GetTaskList [0 0 0 0 0 0 0 2]
+2020-02-17T12:33:52.716+00:00 [Info] ServiceMgr::GetCurrentTopology []
+2020-02-17T12:33:52.716+00:00 [Info] ServiceMgr::GetCurrentTopology returns &{[0 0 0 0 0 0 0 2] [e2a2c7da05001b61d5128ac80c037dc5 3f1adf42289fac35f84a33ceb7f5d2d2 c17ce99f3cb0cec8038043e30471d33f] true []}
+2020-02-17T12:33:52.717+00:00 [Info] ServiceMgr::GetCurrentTopology [0 0 0 0 0 0 0 2]
